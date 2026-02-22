@@ -1,4 +1,4 @@
-baseURL = 'http://localhost:1313/'
+baseURL = 'https://tompassarelli.org/'
 languageCode = 'en-us'
 title = "Tom Passarelli's Blog"
 
