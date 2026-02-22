@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Role-Arity and the Structure of Emergence | Tom Passarelli&#39;s Blog</title>
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+</head>
+<body class="max-w-3xl mx-auto px-4 py-8 bg-neutral-950 text-neutral-200 min-h-screen flex flex-col">
+  <nav class="mb-8"><a href="/" class="text-blue-400 hover:text-blue-300">Home</a></nav>
+  <div class="flex-1">
+<article class="prose prose-invert prose-neutral max-w-none">
+  <h1 class="text-3xl font-bold border-b border-neutral-700 pb-2">Role-Arity and the Structure of Emergence</h1>
+  <time class="text-sm text-neutral-500">2026-02-23</time>
+  <div class="mt-6"><p><em>Some questions fail because they demand more functional structure than the target can supply, or because they demand less and force a false dichotomy.</em></p>
+<h2 id="the-claim">The Claim</h2>
+<p>Structural capabilities emerge at specific thresholds of role-arity — the minimum number of functionally distinct roles required for an operation to be well-typed. Role-arity here is not argument-arity; it is the number of functionally distinct slots required for an operation to count as an instance of its operation class. Invariance requires one role. Difference requires two. Evaluation requires three. Each threshold is fundamental at its own level: irreducible within that arity, and insufficient to produce what the next arity makes possible.</p>
+<p>A question&rsquo;s role-arity is the minimum number of functional roles that must be instantiated to answer it. A target&rsquo;s role-arity is the minimum roles it supplies without importing external structure. When a question&rsquo;s arity exceeds its target&rsquo;s, the surplus generates phantom structure — foils, criteria, modal spaces — that the target cannot ground. When a question&rsquo;s arity falls short, it forces flattening: false dichotomies imposed on a subject with more internal structure than the question can represent.</p>
+<p>Arity mismatch is a sufficient condition for specific failure modes (phantom depth from overspecification; forced dichotomy from underspecification), not a necessary-and-sufficient criterion for question well-formedness. Questions can be ill-posed for other reasons. But when the mismatch is present, the failure mode is predictable.</p>
+<h2 id="the-table">The Table</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Arity</th>
+          <th>What&rsquo;s Fundamental</th>
+          <th>Formal Expression</th>
+          <th>What It Makes Possible</th>
+          <th>What It Cannot Do</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>1</strong></td>
+          <td>Invariance</td>
+          <td>E(x) = x. More broadly: any structure unchanged under evolution — fixed point, attractor, conserved quantity.</td>
+          <td>Persistence. Stability. Something remaining itself across operations. The minimum structural content of &ldquo;being.&rdquo;</td>
+          <td>Cannot produce difference. Has no second role. No comparison, no distinction, no &ldquo;other.&rdquo;</td>
+      </tr>
+      <tr>
+          <td><strong>2</strong></td>
+          <td>Difference</td>
+          <td>A ≠ B. Two roles: this and not-this.</td>
+          <td>Partition. Boundary. Information (a difference that makes a difference — Bateson). Two states. The origin of binary structure.</td>
+          <td>Cannot produce evaluation or classification. Partitions exist as structure; determining membership in a partition requires a criterion/rule slot — a third functional position.</td>
+      </tr>
+      <tr>
+          <td><strong>3</strong></td>
+          <td>Self-reference</td>
+          <td>Input → Evaluator → Output, where output can feed back as input. Three functionally distinct roles.</td>
+          <td>Evaluation. Computation. Feedback. A system that can observe its own state and act on the observation. The threshold for meaningful complexity.</td>
+          <td>(This is the threshold. Everything beyond is elaboration within arity ≥ 3.)</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="notes-on-formal-objects">Notes on formal objects</h3>
+<p><strong>Arity 1:</strong> Invariance is the core concept: some structure unchanged under evolution or operation. The simplest formal expression is E(x) = x — a fixed point under a unary operator. But invariance is broader than literal fixed points. Limit cycles, attractors, conserved quantities, and symmetries are all invariant structures at some description level. What matters is that the substrate admits something that persists — some aspect that remains itself across operations. The identity function of lambda calculus is a specific instance: I(I) = I, a fixed point of self-application in the untyped setting. But self-application is itself a binary operation (applying something <em>to</em> something), so it is an illustration of invariance, not its definition.</p>
+<p><strong>Arity 3:</strong> The claim is that <em>evaluation</em> — the specific operation class that includes computation, explanation, and self-reference — requires three functionally distinct roles: something to be evaluated (input), something that evaluates against a criterion (process), and a result (output). These are functional positions, not necessarily distinct entities. One object can occupy multiple positions — a Turing machine&rsquo;s read head, rule table, and write head can be instantiated in the same physical substrate. The operation type still has three slots. What matters is that the slots are functionally irreducible: removing any one of the three causes the operation to degenerate into a lower arity. Without input, there is nothing to evaluate. Without a criterion/process, there is no evaluation, only a pair of things (arity 2). Without output, evaluation produces no result and cannot feed back.</p>
+<h2 id="arity-1-invariance">Arity 1: Invariance</h2>
+<p>E(x) = x. Something unchanged under an operation. A fixed point. More broadly: any structure that persists under evolution — a fixed point, an attractor, a conserved quantity, a symmetry. The specific form of invariance matters less than the fact of it. The minimum structural content of being anything at all.</p>
+<p>This is what consistency <em>is</em> at maximum compression. If nothing is invariant — if no structure persists under any operation at any description level — nothing survives across operations. There is no &ldquo;across.&rdquo; There is no &ldquo;operations.&rdquo; There is nothing stable enough to be operated on. A substrate capable of supporting further structure must admit some invariant, even if that invariant is not a literal fixed point but a cycle or a conserved quantity.</p>
+<p>At arity 1, you have one role. One functional position. There is nothing to compare against, nothing to distinguish from, nothing to evaluate. This is not impoverished. It is complete at its own level. The question of whether it &ldquo;should&rdquo; be more is itself an arity-3 operation (it evaluates arity 1 against a criterion and finds it wanting — but the criterion and the judgment are imported, not resident in the subject).</p>
+<h3 id="what-arity-1-cannot-do">What arity 1 cannot do</h3>
+<p>Produce difference. For difference you need two roles: this and not-this. One role has no &ldquo;not-this.&rdquo; There is no outside. There is no boundary between inside and outside because boundary is a 2-arity concept. Arity 1 is total. Everything is itself.</p>
+<h2 id="arity-2-difference">Arity 2: Difference</h2>
+<p>Two roles. Two things that are not the same. A and not-A. True and false. 0 and 1. Inside and outside.</p>
+<p>The jump from 1 to 2 is the origin of information. Information is difference — a difference that makes a difference. At arity 1 there are no differences. At arity 2, difference is all there is. The entire binary apparatus — negation, boundary, the bit — lives here. Two states exist. True and false exist as a partition. But nothing at this level <em>determines</em> which state obtains. Determination is arity 3.</p>
+<p>A - A = 0 bridges the arities. The invariance operation (arity 1) expressed across a difference (arity 2) yields zero — the measurement that invariance holds. A - B ≠ 0 is the measurement that it doesn&rsquo;t. Every nonzero value is a degree of difference. Mathematics lives in the gap between zero and not-zero.</p>
+<h3 id="partition-vs-dot-classification">Partition vs. classification</h3>
+<p>This distinction matters and protects the framework from an internal contradiction. Arity 2 supports partitions — structural differences that exist. True and false as two states. Inside and outside as two regions. Food and not-food as two categories. The partition is there. The difference is real.</p>
+<p>What arity 2 does not support is <em>determination</em> — reading the partition, applying a criterion, and producing a verdict about which side a thing falls on. &ldquo;Does A match B?&rdquo; introduces an irreducible third functional position: a criterion or rule slot. R(A, B) → result. Difference is a 2-role relation. Classification is a 3-role schema because it requires a rule that operates on the two things and produces a result. This is not a claim that the world must contain a third object. It is a claim that the operation class adds a third functional slot.</p>
+<p>A bit has two states but no rule that reads them. A membrane has an inside and an outside but no process that decides which molecules belong where — the differential behavior is a structural property, not an evaluation. The moment something <em>reads</em> the bit, <em>classifies</em> the molecule, or <em>determines</em> which side of a boundary a thing falls on, you have arity 3.</p>
+<h3 id="paraconsistency-as-arity-inflation">Paraconsistency as arity inflation</h3>
+<p>Priest&rsquo;s dialetheia — the claim that some propositions are both true and false — is interesting precisely because it reveals an arity constraint.</p>
+<p>Arity 2 is an exclusive partition. Two roles, disjoint. A thing occupies one role or the other. True or false. This or that. The structural content of arity 2 is that the roles don&rsquo;t overlap.</p>
+<p>The moment you allow overlap — a proposition that is both true and false — you have introduced a third functional position: overlap membership, or consistency status, or whatever you want to call the track that determines whether a given proposition sits in one role, the other, or both. That third position is not acknowledged in the paraconsistent framework, but it is present. It is doing work. It is what distinguishes a &ldquo;merely true&rdquo; proposition from a &ldquo;true-and-also-false&rdquo; one. Without it, you cannot tell dialetheia apart from ordinary truths, which means you cannot operate the system.</p>
+<p>So paraconsistency does not break arity 2. It inflates beyond it. The phenomenon Priest is modeling genuinely requires more than two functional roles, and his system smuggles in the extra role without acknowledging it as a structural commitment. Even if the extra status is definable within the formalism, its functional role is irreducible: it is exactly what makes &ldquo;both&rdquo; behave differently from &ldquo;true-only&rdquo; and &ldquo;false-only&rdquo; under consequence. This is not a refutation of paraconsistent logic as a formal tool. It is the observation that the formal tool is operating at arity 3 while claiming to extend arity 2.</p>
+<h2 id="arity-3-self-reference">Arity 3: Self-Reference</h2>
+<p>Three functionally distinct roles in a directed relationship: input, evaluator, output. This is the minimum architecture for self-reference, because the output can feed back as input — and the system can evaluate its own products.</p>
+<p>This is where meaningful complexity becomes structurally possible:</p>
+<ul>
+<li>A Turing machine: reads input, applies rules, writes output, continues reading. Three functional positions.</li>
+<li>A compiler: takes source (input), checks consistency (evaluation), produces an executable or rejection (output). Three functional positions.</li>
+<li>The halting problem: arises because a self-referential evaluator is asked whether its own process terminates — the output of evaluation is fed back as input to the same evaluator, creating undecidability.</li>
+<li>Gödel&rsquo;s incompleteness: a formal system (axioms → inference rules → theorems) is asked to evaluate a statement about itself. Self-reference within the system produces undecidable propositions.</li>
+</ul>
+<p>None of this is possible at arity 2. You can have true and false at arity 2, but you cannot have a <em>process</em> that determines which one obtains. Determination is evaluation. Evaluation is arity 3. Classification is evaluation where the output is a membership verdict with respect to a partition — it is the simplest arity-3 operation, the one that reads arity-2 structure.</p>
+<h3 id="the-evaluation-loop">The evaluation loop</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Role</th>
+          <th>In the universe model</th>
+          <th>In lambda calculus</th>
+          <th>In explanation</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Input</td>
+          <td>Noise (candidate strings)</td>
+          <td>Argument</td>
+          <td>Explanandum</td>
+      </tr>
+      <tr>
+          <td>Evaluator</td>
+          <td>Compiler (consistency check)</td>
+          <td>Function</td>
+          <td>Criterion / rule</td>
+      </tr>
+      <tr>
+          <td>Output</td>
+          <td>Persistent programs or rejection</td>
+          <td>Return value</td>
+          <td>Justification</td>
+      </tr>
+  </tbody>
+</table>
+<p>The evaluator is not imposed from outside. It emerges from the same substrate as the things it evaluates. The compiler is itself a program. The criterion is itself a proposition. Self-reference is what you get when the output includes the cycle itself as a possible input. And undecidability is what you get when that self-reference is unavoidable.</p>
+<h2 id="the-diagnostic-question-arity-vs-dot-target-arity">The Diagnostic: Question-Arity vs. Target-Arity</h2>
+<h3 id="definitions">Definitions</h3>
+<p>A <strong>question&rsquo;s role-arity</strong> is the minimum number of functional roles that must be instantiated to count as answering it.</p>
+<p>A <strong>target&rsquo;s role-arity</strong> is the minimum roles it supplies without importing structure from outside itself.</p>
+<p><strong>Overspecification:</strong> question arity &gt; target arity. The surplus roles (foils, criteria, modal spaces, alternative branches) are generated by the question&rsquo;s own structure, not found in the subject. The apparent depth is a projection of the question&rsquo;s complexity, not the subject&rsquo;s.</p>
+<p><strong>Underspecification:</strong> question arity &lt; target arity. The question forces the subject into fewer roles than it actually occupies. False dichotomies. Forced flattening.</p>
+<p>Arity mismatch is a sufficient condition for these specific failure modes. It is not the only way a question can be ill-posed, and matching arity does not guarantee a question is well-formed. Additional conditions matter: the foil must be a live alternative in the target&rsquo;s own modal space, and the criterion slot must be grounded by the target&rsquo;s internal structure rather than imported. The diagnostic catches a specific class of failures, not all failures.</p>
+<h3 id="application-why-is-there-something-rather-than-nothing">Application: &ldquo;Why is there something rather than nothing?&rdquo;</h3>
+<p>This is a contrastive why-question by construction. &ldquo;Rather than&rdquo; explicitly introduces a foil. A contrastive why-question has the following role structure:</p>
+<ol>
+<li><strong>Explanandum</strong> — the thing to be explained (something exists)</li>
+<li><strong>Foil</strong> — the alternative (nothing)</li>
+<li><strong>Criterion</strong> — what selects between them (the demanded &ldquo;why&rdquo;)</li>
+<li><strong>Justificatory output</strong> — the answer</li>
+<li><strong>Modal space</strong> — the domain in which the foil is a live alternative</li>
+</ol>
+<p>That is arity 5 at minimum. The target — if the framework&rsquo;s analysis is correct — is invariance. E(x) = x. Arity 1.</p>
+<p>The question does not just exceed the target by one role. It exceeds it by four. The foil (&ldquo;nothing&rdquo;), the criterion (&ldquo;why this rather than that&rdquo;), the justificatory output (&ldquo;because&hellip;&rdquo;), and the modal space (&ldquo;in a world where either could obtain&rdquo;) are all generated by the question&rsquo;s own contrastive structure. The target — persistence, invariance, something unchanged under operation — supplies exactly one role. It has no foil, no criterion, no modal alternatives. It does not have the structural content to ground any of those things.</p>
+<p>The claim is not that &ldquo;invariance is the subject.&rdquo; The claim is that the only candidate for a non-derivative stopping point — the only thing that cannot be further reduced without the act of reduction presupposing it — is 1-role invariance. And a contrastive why-question demands more structure than any 1-role stopping point can supply. The foil (&ldquo;nothing&rdquo;) is not found at the target level. It is fabricated by the contrastive structure of the question itself — the question introduces an alternative that the target&rsquo;s own domain does not contain and cannot adjudicate.</p>
+<p>The question is not unanswerable. It is overspecified relative to its target. The depth people sense is the question&rsquo;s own structural complexity, mistaken for depth in the subject.</p>
+<p>This is distinct from the earlier &ldquo;the question presupposes its own answer&rdquo; argument. That argument is valid but reads as circular to a hostile reader. The arity-mismatch argument is structural: the question has more moving parts than the thing it&rsquo;s asking about. The gap between them is the gap between the question&rsquo;s architecture and the target&rsquo;s, and no operation within the question&rsquo;s architecture can reduce its own arity to match.</p>
+<h3 id="application-a-contrastive-why-that-resolves--the-passes-case">Application: A contrastive why that resolves (the &ldquo;passes&rdquo; case)</h3>
+<p>&ldquo;Why does water expand when it freezes rather than contract?&rdquo;</p>
+<p>Contrastive. Has a foil (contraction). Demands a criterion (what selects expansion over contraction). So it deploys at minimum arity 4: explanandum, foil, criterion, output.</p>
+<p>The target — molecular structure and thermodynamics — has rich internal structure. Hydrogen bonding geometry, crystalline lattice formation, energy states, phase transition dynamics. The target supplies distinct functional roles: molecular configuration (input), thermodynamic constraints (criterion), resulting volume change (output). The foil (contraction) is a genuine alternative within the same physical domain — most liquids do contract when they freeze. The modal space is licensed: the question asks about this substance relative to the class of substances where the foil is the norm.</p>
+<p>The question&rsquo;s arity does not exceed the target&rsquo;s. The foil is grounded. The criterion is available. The answer resolves: ice forms a relatively open hydrogen-bonded lattice, lowering density compared to liquid water. The contrastive why is well-formed because the target has enough internal structure to host the comparison.</p>
+<p>This is what a well-formed contrastive why looks like: the target supplies enough roles to ground the foil and criterion the question demands. The diagnostic does not dissolve this question. It predicts it should resolve. And it does.</p>
+<h3 id="application-underspecification-is-the-universe-deterministic-or-random">Application: Underspecification — &ldquo;Is the universe deterministic or random?&rdquo;</h3>
+<p>This is an arity-2 question. Two roles, presented as exhaustive: deterministic or random. The binary conflates ontic rule type with epistemic computability.</p>
+<p>The subject requires at least a 2×2 description — two independent axes, not one binary:</p>
+<ul>
+<li><strong>Axis 1 (generative rule):</strong> deterministic vs. stochastic. Is the process rule-governed with unique successor states, or does it involve genuine probability?</li>
+<li><strong>Axis 2 (epistemic access):</strong> decidable vs. undecidable. Can an embedded observer compute the system&rsquo;s trajectory, or does self-reference create principled limits on prediction?</li>
+</ul>
+<p>A system can be deterministic and undecidable (a Turing machine running a non-halting program — fully rule-governed, trajectory unpredictable from within). A system can be stochastic and decidable (a fair coin — genuinely random, but the distribution is fully characterizable). The two axes are independent.</p>
+<p>The binary question &ldquo;deterministic or random?&rdquo; collapses both axes into one. It forces a subject that varies along two independent dimensions into a single 2-role slot. This is underspecification. The answer cannot be represented in the question&rsquo;s format because the question does not have enough functional positions to capture the subject&rsquo;s structure.</p>
+<p>The result is a false dichotomy. People argue endlessly about whether the universe is &ldquo;really deterministic&rdquo; or &ldquo;really random&rdquo; because the question forces a choice between two options that do not exhaust the space. The answer may be &ldquo;deterministic on one axis and undecidable on the other&rdquo; — a description that requires more roles than the question provides.</p>
+<h2 id="the-arity-progression-applied-to-artificial-life">The Arity Progression Applied to Artificial Life</h2>
+<p>The cell-to-dwarf design problem maps onto arity thresholds:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Agent arity</th>
+          <th>What it does</th>
+          <th>Emergent analog</th>
+          <th>Design criterion</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>1</strong></td>
+          <td>Persists. Maintains energy. Re-instantiates each tick.</td>
+          <td>Stable particles. Chemical bonds. Structural elements.</td>
+          <td>Energy physics: does this configuration persist under the update rule?</td>
+      </tr>
+      <tr>
+          <td><strong>2</strong></td>
+          <td>Exhibits stable differences. Boundary behavior. Differential response to environment — inside vs. outside, toward vs. away.</td>
+          <td>Membranes. Chemotaxis. Tropisms. Differential permeability.</td>
+          <td>Partition rules: structural differences that affect dynamics without explicit rule-application.</td>
+      </tr>
+      <tr>
+          <td><strong>3</strong></td>
+          <td>Evaluates. Models its own state. Predicts outcomes. Modifies behavior based on past evaluation.</td>
+          <td>Decision-making. Communication. Pack behavior. Tool use.</td>
+          <td>Feedback loops: the agent&rsquo;s output feeds back into its own input. Self-reference under selection pressure.</td>
+      </tr>
+  </tbody>
+</table>
+<p>The design question — &ldquo;how far from authored behavior can you get while keeping emergence legible?&rdquo; — becomes: at what arity threshold does the system start producing arity-3 agents from arity-1 and arity-2 rules? That is the phase transition. That is where something happens that looks like a decision being made by an entity you did not design.</p>
+<h2 id="compact-summary">Compact Summary</h2>
+<p>Role-arity is the minimum number of functionally distinct roles required for an operation. Invariance: 1. Difference: 2. Evaluation: 3.</p>
+<p>Contrastive why-questions have high arity (explanandum, foil, criterion, output, modal space). When aimed at a target whose arity is lower, the surplus roles are generated by the question, not the subject. The perceived depth is in the question, not the answer.</p>
+<p>&ldquo;Why something rather than nothing&rdquo; is overspecified. The only non-derivative stopping point — invariance, some structure that persists under evolution — has arity 1. The question has arity ≥ 4. The foil and criterion cannot be grounded at the target level. The question dissolves not because it is too hard but because it does not fit.</p>
+<p>&ldquo;Is the universe deterministic or random&rdquo; is underspecified. The subject varies along at least two independent axes (generative rule and epistemic access). The question provides one binary. The answer cannot be expressed in the question&rsquo;s format.</p>
+<p>Well-formed contrastive questions have targets with enough internal structure to ground the foil and criterion. &ldquo;Why does water expand when it freezes?&rdquo; resolves because the target&rsquo;s molecular structure hosts the comparison.</p>
+<p>Arity mismatch is a sufficient condition for these failure modes, not a universal test for question well-formedness.</p>
+<p>One role: something persists. Two roles: things differ. Three roles: a system can observe itself.</p>
+<h2 id="formal-adjacencies">Formal Adjacencies</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Concept</th>
+          <th>Arity</th>
+          <th>Reference</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Fixed points / invariance</td>
+          <td>1</td>
+          <td>Brouwer, 1911; lambda calculus</td>
+      </tr>
+      <tr>
+          <td>Spencer-Brown&rsquo;s primary distinction</td>
+          <td>1 → 2 transition</td>
+          <td>Laws of Form, 1969</td>
+      </tr>
+      <tr>
+          <td>Shannon information (bit)</td>
+          <td>2</td>
+          <td>Information theory, 1948</td>
+      </tr>
+      <tr>
+          <td>Bateson: &ldquo;difference that makes a difference&rdquo;</td>
+          <td>2</td>
+          <td>Steps to an Ecology of Mind, 1972</td>
+      </tr>
+      <tr>
+          <td>Peirce&rsquo;s sign/interpretant/object triad</td>
+          <td>3</td>
+          <td>Collected Papers, 1931–58</td>
+      </tr>
+      <tr>
+          <td>Turing machine (read/process/write)</td>
+          <td>3</td>
+          <td>Turing, 1936</td>
+      </tr>
+      <tr>
+          <td>Halting problem</td>
+          <td>3 (self-referential evaluation)</td>
+          <td>Turing, 1936</td>
+      </tr>
+      <tr>
+          <td>Gödel&rsquo;s incompleteness</td>
+          <td>3 (self-reference in formal systems)</td>
+          <td>Gödel, 1931</td>
+      </tr>
+      <tr>
+          <td>Autopoiesis</td>
+          <td>3 (self-producing systems)</td>
+          <td>Maturana &amp; Varela, 1972</td>
+      </tr>
+      <tr>
+          <td>Contrastive explanation theory</td>
+          <td>Variable</td>
+          <td>Lipton, 1990; van Fraassen, 1980</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="what-s-novel">What&rsquo;s Novel</h2>
+<p>The specific move: treating the arity mismatch between a question&rsquo;s structure and its target&rsquo;s structure as a diagnostic for when explanation-seeking is ill-posed. Two symmetric failure modes — overspecification (phantom depth from surplus roles) and underspecification (false dichotomies from insufficient roles). Applied to dissolve &ldquo;why something rather than nothing&rdquo; as structural overspecification of a contrastive why-question. Applied to diagnose &ldquo;deterministic or random&rdquo; as structural underspecification via axis collapse. Applied to predict which contrastive questions resolve and which do not, based on whether the target&rsquo;s internal structure can ground the foil and criterion.</p>
+<p>The paraconsistency observation: that allowing overlap between truth values inflates beyond arity 2 by introducing an unacknowledged third functional role (overlap membership / consistency status), making paraconsistent logic evidence for the arity framework rather than evidence against it.</p>
+<p>The arity thresholds (1: invariance, 2: difference, 3: self-reference) as a structure for emergence in artificial life systems — each threshold marks a qualitative phase transition in what kind of agent behavior becomes structurally possible.</p>
+<p>The unification: the same role-arity framework that dissolves the metaphysical question also diagnoses the logic, specifies the design criteria for artificial life, and predicts the failure modes of philosophical questions generally.</p>
+</div>
+</article>
+</div>
+  <footer class="mt-16 border-t border-neutral-800 pt-8">
+    <form action="https://buttondown.com/api/emails/tompassarelli" method="post" class="flex gap-2 items-center">
+      <input type="email" name="email" placeholder="your@email.com" required
+        class="bg-neutral-900 border border-neutral-700 rounded px-3 py-2 text-neutral-200 placeholder-neutral-500 focus:outline-none focus:border-blue-400">
+      <button type="submit" class="bg-blue-500 hover:bg-blue-400 text-white px-4 py-2 rounded">subscribe</button>
+    </form>
+  </footer>
+</body>
+</html>

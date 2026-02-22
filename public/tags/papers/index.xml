@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Papers on Tom Passarelli&#39;s Blog</title>
+    <link>http://localhost:1313/tags/papers/</link>
+    <description>Recent content in Papers on Tom Passarelli&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Feb 2026 01:09:00 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/papers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Role-Arity and the Knowing Gradient Role-Arity and the Knowing Gradient</title>
+      <link>http://localhost:1313/posts/20260223010914-role_arity_and_the_knowing_gradient/</link>
+      <pubDate>Mon, 23 Feb 2026 01:09:00 +0700</pubDate>
+      <guid>http://localhost:1313/posts/20260223010914-role_arity_and_the_knowing_gradient/</guid>
+      <description>&lt;div class=&#34;ox-hugo-toc toc&#34;&gt;&#xA;&lt;div class=&#34;heading&#34;&gt;Table of Contents&lt;/div&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#prerequisite&#34;&gt;Prerequisite&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#the-gradient&#34;&gt;The Gradient&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#propositional-knowing-arity-2&#34;&gt;Propositional Knowing: Arity 2&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#procedural-knowing-arity-3--independent-roles&#34;&gt;Procedural Knowing: Arity 3 (Independent Roles)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#perspectival-knowing-arity-3--entangled-roles&#34;&gt;Perspectival Knowing: Arity 3 (Entangled Roles)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#participatory-knowing-arity-3--evaluator-modifying-feedback&#34;&gt;Participatory Knowing: Arity 3 (Evaluator-Modifying Feedback)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#the-actualization-loop&#34;&gt;The Actualization Loop&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#the-meaning-crisis-as-arity-mismatch&#34;&gt;The Meaning Crisis as Arity Mismatch&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#why-modern-interventions-fail&#34;&gt;Why Modern Interventions Fail&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#the-arity-sub-levels&#34;&gt;The Arity Sub-Levels&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#the-dependency-direction&#34;&gt;The Dependency Direction&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#compact-summary&#34;&gt;Compact Summary&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/div&gt;&#xA;&lt;!--endtoc--&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;em&gt;The meaning crisis is not a shortage of knowledge. It is a culture-wide attempt to do arity-3 operations with arity-2 tools.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

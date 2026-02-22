@@ -1,0 +1,9 @@
+{{ define "main" }}
+<h1 class="text-3xl font-bold mb-6">{{ .Site.Title }}</h1>
+{{ range (where .Site.RegularPages "Section" "posts").ByDate.Reverse }}
+<div class="mb-2">
+  <a href="{{ .RelPermalink }}" class="text-blue-400 hover:text-blue-300">{{ .Title }}</a>
+  <span class="text-neutral-500 text-sm ml-2">{{ .Date.Format "2006-01-02" }}</span>
+</div>
+{{ end }}
+{{ end }}
