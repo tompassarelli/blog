@@ -1,7 +1,7 @@
 +++
 title = "Static Income Fallacy"
 date = 2026-02-23T02:37:00+07:00
-tags = ["paper", "public"]
+tags = ["essay", "public"]
 draft = false
 +++
 

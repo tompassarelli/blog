@@ -1,7 +1,7 @@
 +++
 title = "Why Social Platforms Break Relationships That Should Survive"
 date = 2026-02-23T03:24:00+07:00
-tags = ["public"]
+tags = ["essay", "public"]
 draft = false
 +++
 

@@ -1,7 +1,7 @@
 +++
 title = "Post Gym Functionalism"
 date = 2026-02-23T03:12:00+07:00
-tags = ["public"]
+tags = ["essay", "public"]
 draft = false
 +++
 

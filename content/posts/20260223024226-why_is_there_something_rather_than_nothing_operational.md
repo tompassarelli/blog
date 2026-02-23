@@ -1,7 +1,7 @@
 +++
 title = "Why Is There Something Rather Than Nothing (Operational)"
 date = 2026-02-23T02:42:00+07:00
-tags = ["paper", "public"]
+tags = ["essay", "public"]
 draft = false
 +++
 

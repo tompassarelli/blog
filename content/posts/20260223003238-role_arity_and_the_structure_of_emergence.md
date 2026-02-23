@@ -1,11 +1,9 @@
 +++
 title = "Role-Arity and the Structure of Emergence"
 date = 2026-02-23T00:32:00+07:00
-tags = ["paper", "public"]
+tags = ["essay", "public"]
 draft = false
 +++
-
-## Role-Arity and the Structure of Emergence {#role-arity-and-the-structure-of-emergence}
 
 ---
 
@@ -16,7 +14,7 @@ dichotomy._
 ---
 
 
-### The Claim {#the-claim}
+## The Claim {#the-claim}
 
 Structural capabilities emerge at specific thresholds of role-arity ---
 the minimum number of functionally distinct roles required for an
@@ -45,7 +43,7 @@ But when the mismatch is present, the failure mode is predictable.
 ---
 
 
-### The Table {#the-table}
+## The Table {#the-table}
 
 | Arity | What's Fundamental | Formal Expression                                                                                               | What It Makes Possible                                                                                                                          | What It Cannot Do                                                                                                                                                                 |
 |-------|--------------------|-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -54,7 +52,7 @@ But when the mismatch is present, the failure mode is predictable.
 | **3** | Self-reference     | Input → Evaluator → Output, where output can feed back as input. Three functionally distinct roles.             | Evaluation. Computation. Feedback. A system that can observe its own state and act on the observation. The threshold for meaningful complexity. | (This is the threshold. Everything beyond is elaboration within arity ≥ 3.)                                                                                                       |
 
 
-#### Notes on formal objects {#notes-on-formal-objects}
+### Notes on formal objects {#notes-on-formal-objects}
 
 **Arity 1:** Invariance is the core concept: some structure unchanged
 under evolution or operation. The simplest formal expression is E(x) = x
@@ -85,7 +83,7 @@ criterion/process, there is no evaluation, only a pair of things (arity
 ---
 
 
-### Arity 1: Invariance {#arity-1-invariance}
+## Arity 1: Invariance {#arity-1-invariance}
 
 E(x) = x. Something unchanged under an operation. A fixed point. More
 broadly: any structure that persists under evolution --- a fixed point,
@@ -109,7 +107,7 @@ evaluates arity 1 against a criterion and finds it wanting --- but the
 criterion and the judgment are imported, not resident in the subject).
 
 
-#### What arity 1 cannot do {#what-arity-1-cannot-do}
+### What arity 1 cannot do {#what-arity-1-cannot-do}
 
 Produce difference. For difference you need two roles: this and
 not-this. One role has no "not-this." There is no outside. There is no
@@ -119,7 +117,7 @@ concept. Arity 1 is total. Everything is itself.
 ---
 
 
-### Arity 2: Difference {#arity-2-difference}
+## Arity 2: Difference {#arity-2-difference}
 
 Two roles. Two things that are not the same. A and not-A. True and
 false. 0 and 1. Inside and outside.
@@ -138,7 +136,7 @@ Every nonzero value is a degree of difference. Mathematics lives in the
 gap between zero and not-zero.
 
 
-#### Partition vs. classification {#partition-vs.-classification}
+### Partition vs. classification {#partition-vs.-classification}
 
 This distinction matters and protects the framework from an internal
 contradiction. Arity 2 supports partitions --- structural differences
@@ -164,7 +162,7 @@ molecule, or _determines_ which side of a boundary a thing falls on, you
 have arity 3.
 
 
-#### Paraconsistency as arity inflation {#paraconsistency-as-arity-inflation}
+### Paraconsistency as arity inflation {#paraconsistency-as-arity-inflation}
 
 Priest's dialetheia --- the claim that some propositions are both true
 and false --- is interesting precisely because it reveals an arity
@@ -197,7 +195,7 @@ formal tool is operating at arity 3 while claiming to extend arity 2.
 ---
 
 
-### Arity 3: Self-Reference {#arity-3-self-reference}
+## Arity 3: Self-Reference {#arity-3-self-reference}
 
 Three functionally distinct roles in a directed relationship: input,
 evaluator, output. This is the minimum architecture for self-reference,
@@ -226,7 +224,7 @@ with respect to a partition --- it is the simplest arity-3 operation,
 the one that reads arity-2 structure.
 
 
-#### The evaluation loop {#the-evaluation-loop}
+### The evaluation loop {#the-evaluation-loop}
 
 | Role      | In the universe model            | In lambda calculus | In explanation   |
 |-----------|----------------------------------|--------------------|------------------|
@@ -243,10 +241,10 @@ undecidability is what you get when that self-reference is unavoidable.
 ---
 
 
-### The Diagnostic: Question-Arity vs. Target-Arity {#the-diagnostic-question-arity-vs.-target-arity}
+## The Diagnostic: Question-Arity vs. Target-Arity {#the-diagnostic-question-arity-vs.-target-arity}
 
 
-#### Definitions {#definitions}
+### Definitions {#definitions}
 
 A **question's role-arity** is the minimum number of functional roles that
 must be instantiated to count as answering it.
@@ -272,7 +270,7 @@ internal structure rather than imported. The diagnostic catches a
 specific class of failures, not all failures.
 
 
-#### Application: "Why is there something rather than nothing?" {#application-why-is-there-something-rather-than-nothing}
+### Application: "Why is there something rather than nothing?" {#application-why-is-there-something-rather-than-nothing}
 
 This is a contrastive why-question by construction. "Rather than"
 explicitly introduces a foil. A contrastive why-question has the
@@ -319,7 +317,7 @@ and no operation within the question's architecture can reduce its own
 arity to match.
 
 
-#### Application: A contrastive why that resolves (the "passes" case) {#application-a-contrastive-why-that-resolves-the-passes-case}
+### Application: A contrastive why that resolves (the "passes" case) {#application-a-contrastive-why-that-resolves-the-passes-case}
 
 "Why does water expand when it freezes rather than contract?"
 
@@ -349,7 +347,7 @@ demands. The diagnostic does not dissolve this question. It predicts it
 should resolve. And it does.
 
 
-#### Application: Underspecification --- "Is the universe deterministic or random?" {#application-underspecification-is-the-universe-deterministic-or-random}
+### Application: Underspecification --- "Is the universe deterministic or random?" {#application-underspecification-is-the-universe-deterministic-or-random}
 
 This is an arity-2 question. Two roles, presented as exhaustive:
 deterministic or random. The binary conflates ontic rule type with
@@ -387,7 +385,7 @@ provides.
 ---
 
 
-### The Arity Progression Applied to Artificial Life {#the-arity-progression-applied-to-artificial-life}
+## The Arity Progression Applied to Artificial Life {#the-arity-progression-applied-to-artificial-life}
 
 The cell-to-dwarf design problem maps onto arity thresholds:
 
@@ -406,7 +404,7 @@ that looks like a decision being made by an entity you did not design.
 ---
 
 
-### Compact Summary {#compact-summary}
+## Compact Summary {#compact-summary}
 
 Role-arity is the minimum number of functionally distinct roles required
 for an operation. Invariance: 1. Difference: 2. Evaluation: 3.
@@ -442,7 +440,7 @@ system can observe itself.
 ---
 
 
-### Formal Adjacencies {#formal-adjacencies}
+## Formal Adjacencies {#formal-adjacencies}
 
 | Concept                                       | Arity                                                                                                                                        | Reference                         |
 |-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
@@ -460,7 +458,7 @@ system can observe itself.
 ---
 
 
-### What's Novel {#whats-novel}
+## What's Novel {#whats-novel}
 
 The specific move: treating the arity mismatch between a question's
 structure and its target's structure as a diagnostic for when
