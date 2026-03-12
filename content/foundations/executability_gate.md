@@ -4,6 +4,7 @@ date = 2026-03-12T19:48:00+07:00
 slug = "the-executability-gate"
 tags = ["public"]
 draft = false
+weight = 5
 +++
 
 ## The Executability Gate: Anchor-Failure Detection (V₂) {#the-executability-gate-anchor-failure-detection-v₂}

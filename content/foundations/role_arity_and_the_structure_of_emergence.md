@@ -3,6 +3,7 @@ title = "Role-Arity and the Structure of Emergence"
 date = 2026-02-23T00:32:00+07:00
 tags = ["essay", "public"]
 draft = false
+weight = 2
 +++
 
 > Editor's note: This essay predates _Running Comes First_ and originally

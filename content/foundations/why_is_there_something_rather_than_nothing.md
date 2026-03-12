@@ -3,6 +3,7 @@ title = "Why Is There Something Rather Than Nothing"
 date = 2026-02-23T02:39:00+07:00
 tags = ["essay", "public"]
 draft = false
+weight = 3
 +++
 
 > Editor's note: This essay predates _Running Comes First_ and uses an

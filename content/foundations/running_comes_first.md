@@ -3,6 +3,7 @@ title = "Running Comes First"
 date = 2026-03-12T22:30:00+07:00
 tags = ["public", "essay"]
 draft = false
+weight = 1
 +++
 
 ---
