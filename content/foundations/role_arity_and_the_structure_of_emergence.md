@@ -7,8 +7,8 @@ weight = 2
 +++
 
 > Editor's note: This essay predates _Running Comes First_ and originally
-> framed invariance as primitive. I now treat invariance, difference, and
-> evaluation as increasingly explicit resolutions of a more primitive
+> framed invariance as primitive. I now treat persistence, distinction, and
+> selection as increasingly explicit resolutions of a more primitive
 > self-sustaining process. The diagnostic claims of the essay remain
 > intact; the ontological framing has been updated.
 
@@ -31,8 +31,7 @@ functionally distinct slots required for an operation to be well-typed.
 
 Invariance is what self-sustaining process looks like at lowest
 resolution. Difference is what it looks like when distinction
-stabilizes. Evaluation is what it looks like when distinction becomes
-directed, structured, and reflexive. Role-arity tracks these thresholds
+stabilizes. Selection is what it looks like when the process discriminates between positions under a criterion and produces a verdict. Role-arity tracks these thresholds
 of explicitness. These are not assembly stages. The arity levels are focal lengths, not construction steps. The numbering reflects descriptive resolution, not temporal or ontological priority. They are increasingly explicit
 articulations of one underlying activity.
 
@@ -55,11 +54,11 @@ when the mismatch is present, the failure mode is predictable.
 
 ## The Table {#the-table}
 
-| Arity | What's Fundamental       | Formal Expression                                                                                               | What It Makes Possible                                                                                                                          | What It Cannot Do                                                                                                                                                                 |
-|-------|--------------------------|-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **1** | Persistence / invariance | E(x) = x. More broadly: any structure unchanged under evolution --- fixed point, attractor, conserved quantity. | Stable carry-through. Persistence. Anything holding form strongly enough across operation to be tracked as the same.                            | Cannot produce explicit difference. Has no second role. No comparison, no distinction, no "other."                                                                                |
-| **2** | Difference               | A ≠ B. Two roles: this and not-this.                                                                            | Explicit partition. Boundary. Information as stable distinction (a difference that makes a difference --- Bateson). Two states.                 | Cannot produce evaluation or classification. Partitions exist as structure; determining membership in a partition requires a criterion/rule slot --- a third functional position. |
-| **3** | Self-reference           | Input → Evaluator → Output, where output can feed back as input. Three functionally distinct roles.             | Evaluation. Computation. Feedback. A system that can observe its own state and act on the observation. The threshold for meaningful complexity. | (This is the threshold. Everything beyond is elaboration within arity ≥ 3.)                                                                                                       |
+| Arity | What's Explicit          | Formal Expression                                                                                                                                 | What It Makes Possible                                                                                                                                                                                             | What It Cannot Do                                                                                                                                                                |
+|-------|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **1** | Persistence / invariance | E(x) = x. More broadly: any structure unchanged under evolution --- fixed point, attractor, conserved quantity.                                   | Stable carry-through. Persistence. Anything holding form strongly enough across operation to be tracked as the same.                                                                                               | Cannot produce explicit difference. Has no second role. No comparison, no distinction, no "other."                                                                               |
+| **2** | Difference               | A ≠ B. Two roles: this and not-this.                                                                                                              | Explicit partition. Boundary. Information as stable distinction (a difference that makes a difference --- Bateson). Two states.                                                                                    | Cannot produce selection or classification. Partitions exist as structure; determining membership in a partition requires a criterion/rule slot --- a third functional position. |
+| **3** | Selection / verdict      | Candidates + Criterion → Verdict. Three functionally distinct roles: what is being discriminated, what discriminates, and the determinate result. | Selection. Verdict. Directed discrimination between positions under a criterion. Evaluation, computation, and feedback as instances of selection. The threshold at which the process operates on its own products. | (This is the threshold. Everything beyond is elaboration within arity ≥ 3.)                                                                                                      |
 
 
 ### Notes on formal objects {#notes-on-formal-objects}
@@ -77,19 +76,19 @@ self-application in the untyped setting. But self-application is itself
 a binary operation (applying something _to_ something), so it is an
 illustration of invariance, not its definition.
 
-**Arity 3:** The claim is that _explicit evaluation_ --- the specific
+**Arity 3:** The claim is that _explicit selection_ --- the specific
 operation class that includes computation, explanation, and
-self-reference --- requires three functionally distinct roles: something
-to be evaluated (input), something that evaluates against a criterion
-(process), and a result (output). These are functional positions, not
+self-reference --- requires three functionally distinct roles: candidates
+for discrimination (input), a criterion that discriminates
+(process), and a determinate verdict (output). These are functional positions, not
 necessarily distinct entities. One object can occupy multiple positions
 --- a Turing machine's read head, rule table, and write head can be
 instantiated in the same physical substrate. The operation type still
 has three slots. What matters is that the slots are functionally
 irreducible: removing any one of the three causes the operation to
-degenerate into a lower arity. Without input, there is nothing to
-evaluate. Without a criterion/process, there is no evaluation, only a
-pair of things (arity 2). Without output, evaluation produces no result
+degenerate into a lower arity. Without candidates, there is nothing to
+select from. Without a criterion, there is no selection, only a
+pair of things (arity 2). Without a verdict, selection produces no result
 and cannot feed back.
 
 ---
@@ -114,7 +113,7 @@ the happening has not lost the thread. Invariance is therefore not prior
 to process. It is the lowest-resolution report of process succeeding.
 
 At arity 1, only persistence is explicit. Difference is not yet explicit
-as partition. Evaluation is not yet explicit as directed verdict. What
+as partition. Selection is not yet explicit as directed verdict. What
 is available here is the minimal stable appearance of anything being
 carried through as itself at all.
 
@@ -214,21 +213,21 @@ formal tool is operating at arity 3 while claiming to extend arity 2.
 ---
 
 
-## Arity 3: Self-Reference {#arity-3-self-reference}
+## Arity 3: Selection {#arity-3-self-reference}
 
-Three functionally distinct roles in directed relation: input,
-evaluator, output. This is the minimum structure required for explicit
-evaluation.
+Three functionally distinct roles in directed relation: candidates,
+criterion, verdict. This is the minimum structure required for explicit
+selection.
 
 At this resolution, self-sustaining process no longer appears merely as
 persistence or partition. It appears as directed discrimination:
-something is taken up, processed against a criterion, and returned with
-a result. This is the threshold at which distinction becomes operative
+candidates are taken up, processed against a criterion, and a verdict is
+returned. This is the threshold at which distinction becomes operative
 rather than merely structural.
 
 This is also the threshold at which self-reference becomes possible in
-the stronger sense. The output can feed back as input. The system can
-take up its own products as material for further evaluation.
+the stronger sense. The verdict can feed back as a new candidate. The system can
+take up its own products as material for further selection.
 Computation, feedback, explanation, and reflexive structure all become
 possible here because the process is no longer merely holding a form or
 a boundary. It is now explicitly operating on what it carries through.
@@ -253,19 +252,19 @@ Passarelli 2026, The Executability Gate.)_
 None of this is explicit at arity 2. A partition can hold at arity 2,
 but nothing in arity 2 yet reads the partition, applies a criterion, and
 returns a verdict. Determination is not just difference. It is directed
-operation on difference. That is why evaluation requires arity 3.
-Classification is evaluation where the output is a membership verdict
+operation on difference. That is why selection requires arity 3.
+Classification is selection where the verdict is a membership determination
 with respect to a partition --- it is the simplest arity-3 operation,
 the one that reads arity-2 structure.
 
 
-### The evaluation loop {#the-evaluation-loop}
+### The selection loop {#the-evaluation-loop}
 
-| Role      | In the universe model            | In lambda calculus | In explanation   |
-|-----------|----------------------------------|--------------------|------------------|
-| Input     | Noise (candidate strings)        | Argument           | Explanandum      |
-| Evaluator | Compiler (consistency check)     | Function           | Criterion / rule |
-| Output    | Persistent programs or rejection | Return value       | Justification    |
+| Role       | In the universe model            | In lambda calculus | In explanation   |
+|------------|----------------------------------|--------------------|------------------|
+| Candidates | Noise (candidate strings)        | Argument           | Explanandum      |
+| Criterion  | Compiler (consistency check)     | Function           | Criterion / rule |
+| Verdict    | Persistent programs or rejection | Return value       | Justification    |
 
 The evaluator is not alien to the process it operates on. It emerges
 within the same running as the things it evaluates. The compiler is
@@ -552,7 +551,7 @@ The cell-to-dwarf design problem maps onto arity thresholds:
 |-------------|-------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
 | **1**       | Persists. Maintains energy. Re-instantiates each tick.                                                                        | Stable particles. Chemical bonds. Structural elements.      | Energy physics: does this configuration persist under the update rule?                                     |
 | **2**       | Exhibits stable differences. Boundary behavior. Differential response to environment --- inside vs. outside, toward vs. away. | Membranes. Chemotaxis. Tropisms. Differential permeability. | Partition rules: structural differences that affect dynamics without explicit rule-application.            |
-| **3**       | Evaluates. Models its own state. Predicts outcomes. Modifies behavior based on past evaluation.                               | Decision-making. Communication. Pack behavior. Tool use.    | Feedback loops: the agent's output feeds back into its own input. Self-reference under selection pressure. |
+| **3**       | Selects. Models its own state. Predicts outcomes. Modifies behavior based on past selection.                                  | Decision-making. Communication. Pack behavior. Tool use.    | Feedback loops: the agent's output feeds back into its own input. Self-reference under selection pressure. |
 
 The design question --- "how far from authored behavior can you get
 while keeping emergence legible?" --- becomes: at what arity threshold
@@ -568,7 +567,7 @@ that looks like a decision being made by an entity you did not design.
 Role-arity is the minimum number of functionally distinct roles required
 for an operation. At lowest resolution, self-sustaining process appears
 as persistence. At higher resolution, it appears as distinction. At
-higher resolution still, it appears as evaluation.
+higher resolution still, it appears as selection.
 
 Contrastive why-questions have high arity (explanandum, foil, criterion,
 output, modal space). When aimed at a target whose arity is lower, the
@@ -595,7 +594,7 @@ Arity mismatch is a sufficient condition for these failure modes, not a
 universal test for question well-formedness.
 
 One role: persistence is explicit. Two roles: distinction is explicit.
-Three roles: evaluation becomes explicit and can turn back on itself.
+Three roles: selection becomes explicit and can turn back on itself.
 
 ---
 
@@ -608,12 +607,12 @@ Three roles: evaluation becomes explicit and can turn back on itself.
 | Spencer-Brown's primary distinction           | 1 → 2 explicitness shift (persistence articulated as partition; distinction made formal) | _Laws of Form_, 1969                |
 | Shannon information (bit)                     | 2: stable distinction / partition                                                        | Information theory, 1948            |
 | Bateson: "difference that makes a difference" | 2: explicit difference with structural consequence                                       | _Steps to an Ecology of Mind_, 1972 |
-| Peirce's sign/interpretant/object triad       | 3: explicit evaluative triad                                                             | _Collected Papers_, 1931--58        |
-| Turing machine (read/process/write)           | 3: directed evaluation over input, rule, output                                          | Turing, 1936                        |
+| Peirce's sign/interpretant/object triad       | 3: explicit selection triad (sign, interpretant, object)                                 | _Collected Papers_, 1931--58        |
+| Turing machine (read/process/write)           | 3: directed selection over input, rule, verdict                                          | Turing, 1936                        |
 | Halting limit                                 | Overspecified evaluative demand on process; V₂ anchor-failure on D(D)                    | Turing, 1936; Passarelli 2026       |
 | Gödelian incompleteness                       | Evaluative collapse of operator/operand distinction; V₂ anchor-failure on G              | Gödel, 1931; Passarelli 2026        |
 | Executability gate (V₁+V₂)                    | Boundary validator over whether requested evaluation can be successfully carried through | Passarelli, 2026                    |
-| Autopoiesis                                   | 3: self-maintaining evaluative organization                                              | Maturana &amp; Varela, 1972         |
+| Autopoiesis                                   | 3: self-maintaining selective organization                                               | Maturana &amp; Varela, 1972         |
 | Contrastive explanation theory                | Variable: depends on number of functional roles demanded by the explanatory request      | Lipton, 1990; van Fraassen, 1980    |
 
 ---
@@ -630,7 +629,7 @@ internal structure forced into an impoverished frame.
 
 The role-arity framework names three thresholds at which one underlying
 activity becomes increasingly explicit: persistence at lowest
-resolution, distinction at higher resolution, evaluation at higher
+resolution, distinction at higher resolution, selection at higher
 resolution still. This turns arity from a count of abstract positions
 into a structural diagnostic over what a target can actually sustain.
 
