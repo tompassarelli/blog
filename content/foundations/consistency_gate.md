@@ -4,7 +4,7 @@ date = 2026-02-23T02:11:00+07:00
 slug = "the-consistency-gate"
 tags = ["essay", "public"]
 draft = false
-weight = 4
+weight = 5
 +++
 
 > Editor's note: This essay predates _Running Comes First_ but has been
