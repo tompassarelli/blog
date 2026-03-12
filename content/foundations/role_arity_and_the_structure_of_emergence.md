@@ -605,19 +605,19 @@ Three roles: selection becomes explicit and can turn back on itself.
 
 ## Formal Adjacencies {#formal-adjacencies}
 
-| Concept                                       | Arity / Structural Relation                                                              | Reference                           |
-|-----------------------------------------------|------------------------------------------------------------------------------------------|-------------------------------------|
-| Persistence / invariance                      | 1: lowest-resolution stable appearance of self-sustaining process                        | Brouwer, 1911; lambda calculus      |
-| Spencer-Brown's primary distinction           | 1 → 2 explicitness shift (persistence articulated as partition; distinction made formal) | _Laws of Form_, 1969                |
-| Shannon information (bit)                     | 2: stable distinction / partition                                                        | Information theory, 1948            |
-| Bateson: "difference that makes a difference" | 2: explicit difference with structural consequence                                       | _Steps to an Ecology of Mind_, 1972 |
-| Peirce's sign/interpretant/object triad       | 3: explicit selection triad (sign, interpretant, object)                                 | _Collected Papers_, 1931--58        |
-| Turing machine (read/process/write)           | 3: directed selection over input, rule, verdict                                          | Turing, 1936                        |
-| Halting limit                                 | Overspecified evaluative demand on process; V₂ anchor-failure on D(D)                    | Turing, 1936; Passarelli 2026       |
-| Gödelian incompleteness                       | Evaluative collapse of operator/operand distinction; V₂ anchor-failure on G              | Gödel, 1931; Passarelli 2026        |
-| Executability gate (V₁+V₂)                    | Boundary validator over whether requested evaluation can be successfully carried through | Passarelli, 2026                    |
-| Autopoiesis                                   | 3: self-maintaining selective organization                                               | Maturana &amp; Varela, 1972         |
-| Contrastive explanation theory                | Variable: depends on number of functional roles demanded by the explanatory request      | Lipton, 1990; van Fraassen, 1980    |
+| Concept                                       | Arity / Structural Relation                                                                                                                                                                                       | Reference                                  |
+|-----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|
+| Persistence / invariance                      | 1: lowest-resolution stable appearance of self-sustaining process                                                                                                                                                 | Brouwer, 1911; lambda calculus             |
+| Spencer-Brown's primary distinction           | 1 → 2 explicitness shift (persistence articulated as partition; distinction made formal)                                                                                                                          | _Laws of Form_, 1969                       |
+| Shannon information (bit)                     | 2: stable distinction / partition                                                                                                                                                                                 | Information theory, 1948                   |
+| Bateson: "difference that makes a difference" | 2: explicit difference with structural consequence                                                                                                                                                                | _Steps to an Ecology of Mind_, 1972        |
+| Peirce's categories and sign triad            | Independent convergence: Firstness (persistence), Secondness (distinction), Thirdness (selection). Peirce proved triadic relations irreducible to dyadic ones. Sign/interpretant/object is the semiotic instance. | Peirce, 1867; _Collected Papers_, 1931--58 |
+| Turing machine (read/process/write)           | 3: directed selection over input, rule, verdict                                                                                                                                                                   | Turing, 1936                               |
+| Halting limit                                 | Overspecified evaluative demand on process; V₂ anchor-failure on D(D)                                                                                                                                             | Turing, 1936; Passarelli 2026              |
+| Gödelian incompleteness                       | Evaluative collapse of operator/operand distinction; V₂ anchor-failure on G                                                                                                                                       | Gödel, 1931; Passarelli 2026               |
+| Executability gate (V₁+V₂)                    | Boundary validator over whether requested evaluation can be successfully carried through                                                                                                                          | Passarelli, 2026                           |
+| Autopoiesis                                   | 3: self-maintaining selective organization                                                                                                                                                                        | Maturana &amp; Varela, 1972                |
+| Contrastive explanation theory                | Variable: depends on number of functional roles demanded by the explanatory request                                                                                                                               | Lipton, 1990; van Fraassen, 1980           |
 
 ---
 
@@ -666,3 +666,15 @@ evidence against it.
 The arity thresholds as a structure for emergence in artificial life
 systems --- each threshold marks a qualitative phase transition in what
 kind of agent behavior becomes structurally possible.
+
+A note on precedent: Peirce's phenomenological categories (Firstness,
+Secondness, Thirdness) independently identify the same irreducibility
+structure. Peirce proved formally that triadic relations cannot be
+decomposed into compositions of dyadic ones. What this project adds is
+the process-first grounding (the categories as resolutions of one
+self-sustaining running, not as irreducible phenomenological facts), the
+validator architecture (V₁ and V₂ as boundary machinery for
+non-executable input), and the diagnostic applications
+(overspecification, underspecification, and the dissolution of canonical
+formal results). The convergence from independent starting points is
+evidence that the three-role constraint is structural, not arbitrary.
