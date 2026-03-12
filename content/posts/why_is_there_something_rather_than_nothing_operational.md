@@ -8,7 +8,7 @@ draft = false
 ## Why Is There Something Rather Than Nothing: Compact Form {#why-is-there-something-rather-than-nothing-compact-form}
 
 This is the compressed form of the argument developed in the main essay,
-_Why Is There Something Rather Than Nothing_.
+[Why Is There Something Rather Than Nothing]({{< relref "why_is_there_something_rather_than_nothing.md" >}}).
 
 Something and nothing are both operations over a domain. Something: some
 x is y. Nothing: no x in y. "No milk in the fridge" works because the
