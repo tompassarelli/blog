@@ -1,6 +1,7 @@
 +++
 title = "Why Is There Something Rather Than Nothing: Compact Form"
 date = 2026-02-23T02:42:00+07:00
+slug = "why-is-there-something-rather-than-nothing-compact-form"
 tags = ["essay", "public"]
 draft = false
 +++
