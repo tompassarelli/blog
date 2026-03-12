@@ -209,12 +209,18 @@ This is where meaningful complexity becomes structurally possible:
 -   A compiler: takes source (input), checks consistency (evaluation),
     produces an executable or rejection (output). Three functional
     positions.
--   The halting problem: arises because a self-referential evaluator is
+-   The halting limit: arises because a self-referential evaluator is
     asked whether its own process terminates --- the output of evaluation
-    is fed back as input to the same evaluator, creating undecidability.
+    is fed back as input to the same evaluator.
 -   Gödel's incompleteness: a formal system (axioms → inference rules →
     theorems) is asked to evaluate a statement about itself.
-    Self-reference within the system produces undecidable propositions.
+    Self-reference within the system generates specifications whose
+    evaluative dependencies cycle without ground.
+
+_(Both cases are revisited below as applications of the role-arity
+diagnostic. The stronger claim --- that these results are artifacts of
+non-executable input reaching an ungated engine --- is developed in
+Passarelli 2026, The Executability Gate.)_
 
 None of this is possible at arity 2. You can have true and false at
 arity 2, but you cannot have a _process_ that determines which one
@@ -382,6 +388,127 @@ space. The answer may be "deterministic on one axis and undecidable on
 the other" --- a description that requires more roles than the question
 provides.
 
+
+### Application: The Halting Limit as Overspecification {#application-the-halting-limit-as-overspecification}
+
+"Can we build a computable function that determines, for any arbitrary
+program, whether it halts?"
+
+The target is a running program. What it supplies is one functional
+role: a process that is either sustaining itself or not. F(x) = x.
+Invariance. Arity 1.
+
+The question demands at minimum five functional roles:
+
+1.  **The program** --- the thing being evaluated. The target supplies
+    this.
+2.  **An external evaluator** --- something distinct from the program,
+    outside it, examining it from a position the target does not supply.
+    Imported by the question.
+3.  **A binary criterion** --- "halts" versus "loops forever." Halting is
+    grounded: it is a transition from running to not running. "Loops
+    forever" is not grounded: no physical or mental process instantiates
+    infinite non-termination. One leg of the criterion is real. The other
+    is a non-executable verdict category (Passarelli 2026, _Why Is There
+    Something Rather Than Nothing_).
+4.  **A finiteness constraint** --- the evaluator must return its verdict
+    in finite time. But finiteness is a property of completed processes,
+    not of procedures considered in advance. The constraint is circular.
+5.  **Universal scope** --- the evaluator must handle all programs,
+    including adversarial self-referential constructions engineered to
+    exploit the evaluator's own process. The target is one program
+    running. Universality is imposed by the question.
+
+The target supplies one role. The question demands five. Four are
+fabricated by the question's own structure. The perceived depth of the
+"halting problem" is the question's structural complexity, mistaken for
+depth in the subject.
+
+The well-formed version of the question is: "Is this program currently
+running?" Arity 2 at most. The target supplies both roles. It resolves
+trivially. Or: run the program and observe. F(x) = x. The program is
+its own halting oracle. The overspecification is the entire source of
+the "limit."
+
+The formal validator that catches the specific non-executable input
+Turing's proof constructs --- D(D), the adversarial program fed to
+itself --- is specified in Passarelli (2026), _The Executability Gate_.
+The role-arity diagnostic identifies _why_ the specification fails: it
+demands more roles than the target supplies. The executability gate
+identifies _where_ the specification fails: the evaluative request
+⟨D(D), halting, F⟩ generates a dependency cycle with no grounded exit.
+
+
+### Application: Gödelian Incompleteness as Overspecification {#application-godelian-incompleteness-as-overspecification}
+
+"Is there a consistent formal system, sufficiently powerful to express
+arithmetic, that can prove all true statements about arithmetic?"
+
+The target is a formal system. What it supplies: axioms (input),
+inference rules (evaluator), theorems (output). Arity 3.
+
+The question demands that the system evaluate its own completeness from
+within itself. This requires the system to simultaneously occupy two
+roles: the object being assessed and the assessor. Operator and operand
+collapse into one entity --- the same structural move as Turing's D(D).
+The completeness criterion further demands that the system contain a
+verdict on every sentence in its domain, including sentences constructed
+to reference the system's own proving behavior.
+
+The Gödel sentence G --- "this sentence is not provable in S" --- is
+the non-executable expression these demands generate. It is constructed
+such that its provability verdict routes through itself: proving G
+requires determining whether a sentence that denies its own provability
+is provable. The provability of G is defined as a function of the
+content of G, and the content of G is defined as a function of G's
+provability. The specification cycles without ground.
+
+The "incompleteness" is not discovered in the formal system. It is
+manufactured by the question's demand that the system evaluate its own
+completeness --- a demand that forces self-referential constructions the
+system cannot host without generating non-executable input.
+
+The formal analysis --- showing that the evaluative request
+⟨G, provability, S⟩ fails V₂ by generating a dependency cycle via
+definitional expansion, negation, and the provability predicate --- is
+specified in Passarelli (2026), _The Executability Gate_. The
+role-arity diagnostic identifies the structural reason: arity collapse
+between operator and operand generates specifications that cycle without
+ground.
+
+
+### The Unification: Non-Executable Input as a Single Pattern {#the-unification-non-executable-input-as-a-single-pattern}
+
+Three canonical results across three domains:
+
+| Result                  | Domain      | Role-Arity Diagnosis                                               | Formal Diagnosis (Executability Gate)                                |
+|-------------------------|-------------|--------------------------------------------------------------------|----------------------------------------------------------------------|
+| Explosion (ECQ)         | Logic       | N/A --- contradictory premises, not an overspecified question      | V₁: substrate-cancellation. {P, ¬P} cancels discriminative substrate |
+| Halting limit           | Computation | Overspecified: 5 roles aimed at arity-1 target                     | V₂: anchor-failure. ⟨D(D), halting, F⟩ cycles via Rules 4(a), 4(b)   |
+| Gödelian incompleteness | Mathematics | Overspecified: arity collapse forces non-executable self-reference | V₂: anchor-failure. ⟨G, provability, S⟩ cycles via Rules 3, 1, 2     |
+
+These are not three separate results. They are three instances of one
+pattern: a formally correct derivation from non-executable input,
+producing a result that does not refer to anything, interpreted as a
+fundamental limit on the domain in which it was derived.
+
+The role-arity framework provides the diagnostic: when a question's
+arity exceeds its target's, or when operator and operand are collapsed
+into one entity, the surplus or collapsed roles generate specifications
+that cycle without ground. The executability gate (Passarelli 2026)
+provides the formal mechanism that catches these specifications before
+the engine processes them.
+
+A note on the existing essay's treatment of these results: the arity-3
+section above describes the halting problem and Gödel's incompleteness
+as cases where "self-reference within the system produces undecidable
+propositions." That description is correct within an ungated framework
+--- it is what happens when non-executable input reaches an engine with
+no executability validator. The stronger claim, developed in _The
+Executability Gate_, is that the ungated framework is architecturally
+wrong to admit those specifications at all. Undecidability is the
+symptom. Non-executable input reaching the engine is the cause.
+
 ---
 
 
@@ -450,8 +577,9 @@ system can observe itself.
 | Bateson: "difference that makes a difference" | 2                                                                                                                                            | Steps to an Ecology of Mind, 1972 |
 | Peirce's sign/interpretant/object triad       | 3                                                                                                                                            | Collected Papers, 1931--58        |
 | Turing machine (read/process/write)           | 3                                                                                                                                            | Turing, 1936                      |
-| Halting problem                               | 3 (self-referential evaluation)                                                                                                              | Turing, 1936                      |
-| Gödel's incompleteness                        | 3 (self-reference in formal systems)                                                                                                         | Gödel, 1931                       |
+| Halting limit                                 | Overspecification of arity-1 target; V₂ anchor-failure on D(D)                                                                               | Turing, 1936; Passarelli 2026     |
+| Gödelian incompleteness                       | Arity collapse (operator/operand); V₂ anchor-failure on G                                                                                    | Gödel, 1931; Passarelli 2026      |
+| Executability gate (V₁+V₂)                    | Pre-formal validation layer; catches substrate-cancellation and anchor-failure                                                               | Passarelli, 2026                  |
 | Autopoiesis                                   | 3 (self-producing systems)                                                                                                                   | Maturana &amp; Varela, 1972       |
 | Contrastive explanation theory                | Variable                                                                                                                                     | Lipton, 1990; van Fraassen, 1980  |
 
@@ -487,3 +615,15 @@ The unification: the same role-arity framework that dissolves the
 metaphysical question also diagnoses the logic, specifies the design
 criteria for artificial life, and predicts the failure modes of
 philosophical questions generally.
+
+The halting limit and Gödelian incompleteness as overspecification: the
+same diagnostic that dissolves "why something rather than nothing"
+identifies the halting limit as a five-role question aimed at an
+arity-1 target, and incompleteness as an arity collapse that forces
+non-executable self-reference. Both are diagnosed by the role-arity
+framework and formally caught by the executability gate (Passarelli
+2026, _The Executability Gate_), which specifies a typed validator over
+evaluative requests that detects dependency cycles without grounded
+exits. The three canonical "limits" of logic (explosion), computation
+(halting), and mathematics (incompleteness) are shown to be instances of
+one pattern: formally correct derivations from non-executable input.
