@@ -5,6 +5,20 @@ tags = ["essay", "public"]
 draft = false
 +++
 
+> Framework note: This essay applies the full arity triad to employment
+> structure. Signal legibility is persistence made explicit --- can the
+> system state be tracked by all parties? Revenue coupling is distinction
+> made explicit --- is the gap between contribution and compensation
+> visible? Bounded engagement windows are selection made explicit --- does
+> the system produce criterion-governed verdicts at defined boundaries?
+> The irreducibility claim is the role-arity diagnostic applied to labor:
+> all three levels of explicitness are required, and removing any one
+> produces a characteristic failure. The hourly wage is the static income
+> fallacy --- treating a dynamic, process-level quantity as a fixed
+> invariant. See _Running Comes First_ for the ontological claim and
+> _Role-Arity and the Structure of Emergence_ for the diagnostic.
+
+
 ## The Static Income Fallacy {#the-static-income-fallacy}
 
 

@@ -5,6 +5,17 @@ tags = ["essay", "public"]
 draft = false
 +++
 
+> Framework note: This essay is about what happens when effort is
+> structurally prevented from carrying through. The gym is a closed loop:
+> real exertion, no durable output, no external verdict. Persistence
+> without selection. The subscription model depends on this --- it needs
+> effort to never resolve into anything that compounds, persists, or
+> feeds back into the world. The alternative structures described here
+> (food forests, composting, tool libraries) are cases where effort
+> carries through and selection becomes explicit. See _Running Comes
+> First_ for the ontological claim and _Role-Arity and the Structure of
+> Emergence_ for the diagnostic.
+
 The gym is a prosthetic. That's not an insult — prosthetics are incredible. If you've lost something, or never had it, or need to rebuild from zero, a prosthetic can give you back a version of what's missing. The gym does this for physical trust. If you can't trust your body to carry groceries up stairs, to catch yourself when you trip, to exist in space without anxiety — the gym is genuinely life-changing. It gives you a controlled environment to rebuild the most basic relationship you have, which is the one between you and your own skeleton.
 
 But here's where I get lost.

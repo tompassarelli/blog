@@ -5,6 +5,14 @@ tags = ["essay", "public"]
 draft = false
 +++
 
+> Framework note: This essay is an application of the role-arity
+> diagnostic to social infrastructure. The platform forces a binary ---
+> connected or not --- on a target with richer internal structure. That is
+> arity-2 underspecification. The missing liminal tools are missing
+> arity-3 features: criterion-governed selection over relationship states,
+> with verdicts visible to both parties. See _Role-Arity and the
+> Structure of Emergence_ for the general diagnostic.
+
 Every major social platform lets you mute, restrict, or hide people. None of them let you do it in a way that's visible, mutual, and temporary. The tools that exist are asymmetric by design --- they reduce your pain just enough to keep you on the platform without actually changing the relationship's structure. You can mute someone's Instagram stories, but they can still see yours. You can leave a Discord server, but the DMs stay open and you've just signaled hostility without saying anything. You can restrict someone on Facebook, but they don't know you've done it, which means you're managing the relationship through a one-sided trick they can't respond to.
 
 The result is that platforms give you the _appearance_ of nuance while offering none of the substance. There is no feature, on any major platform, that lets you say: "I need space from this person, they should know I need space, and in 90 days I want to be asked if I'm ready to reconnect." There's no explicit, reciprocal liminal state. Just a collection of secret levers you pull behind someone's back and a nuclear button you press to their face.
