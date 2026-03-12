@@ -77,7 +77,7 @@ a binary operation (applying something _to_ something), so it is an
 illustration of invariance, not its definition.
 
 **Arity 3:** The claim is that _explicit selection_ --- the specific
-operation class that includes computation, explanation, and
+operation class that includes computation, classification, and
 self-reference --- requires three functionally distinct roles: candidates
 for discrimination (input), a criterion that discriminates
 (process), and a determinate verdict (output). These are functional positions, not
@@ -266,8 +266,8 @@ the one that reads arity-2 structure.
 | Criterion  | Compiler (consistency check)     | Function           | Criterion / rule |
 | Verdict    | Persistent programs or rejection | Return value       | Justification    |
 
-The evaluator is not alien to the process it operates on. It emerges
-within the same running as the things it evaluates. The compiler is
+The criterion is not alien to the process it operates on. It emerges
+within the same running as the things it selects. The compiler is
 itself a program. The criterion is itself a proposition. Self-reference
 is what you get when the output includes the cycle itself as a possible
 input. And ungated undecidability is what you get when that self-reference
