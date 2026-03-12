@@ -28,7 +28,7 @@ unanswered. It is expressible but not executable.
 
 For the full argument, including the distinction between
 substrate-cancellation and anchor-failure, the discussion of formal
-semantics, and the objections and replies, see the main essay.
+semantics, and the objections and replies, see [the main essay]({{< relref "why_is_there_something_rather_than_nothing.md" >}}).
 
 
 ### Author {#author}
