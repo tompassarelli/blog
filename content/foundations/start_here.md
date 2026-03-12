@@ -23,7 +23,7 @@ result is treated as a deep discovery about the limits of logic,
 computation, or mathematics. The claim of this project is that the
 result is instead a diagnostic artifact of missing input validation.
 
-The project currently has five core essays.
+The project currently has ten core essays.
 
 **Running Comes First** argues that the primitive is not invariance,
 consistency, or any static condition, but self-sustaining process.
@@ -59,12 +59,34 @@ instances of one pattern: formally correct derivations from input that
 should have been rejected at the boundary between expression and
 execution.
 
-The unifying claim is architectural. A formal system should not treat
-every syntactically legal input as executable. There must be a boundary
-between what can be expressed and what can actually be carried through
-as evaluation. Contradiction and cyclic anchor-failure are different
-failure modes, but the response is the same in form: validate the input
-before trusting the result.
+**Agency Is Not Added** argues that agency is not a property added to
+non-agentive matter at a complexity threshold. It is what
+self-sustaining process looks like when selection becomes explicit. The
+question "how does agency arise from non-agentive matter?" is diagnosed
+as the same structural error as "why is there something rather than
+nothing?" --- an overspecified question whose foil is fabricated by the
+question's own contrastive structure.
+
+**Value Is Structural** argues that the asymmetry between carry-through
+and collapse is intrinsic to the running, not projected by an observer.
+Not all process-states are equivalent. That structural asymmetry is the
+precondition for any non-arbitrary value claim.
+
+**What Carries Through** applies the framework to the question "what
+should I do?" The structural answer: do things whose carry-through you
+can sustain, under criteria you can own, that produce real distinctions
+and verdicts you can feed back into further action. The enemy is not
+failure. The enemy is non-executability.
+
+**Why Games Feel Meaningful** argues that games feel meaningful not because
+of their content but because they compress the structural conditions for
+meaning --- persistence, distinction, and selection --- into a
+resolution a human can directly experience. Games are meaning
+laboratories, not simulations of meaning.
+
+Taken together, the essays develop a philosophy of how process carries
+through, how malformed requests fail, and how meaningful action becomes
+possible once selection is made explicit.
 
 The essays are available at [tompassarelli.org](https://tompassarelli.org).
 All work is released under CC0.
