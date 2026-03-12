@@ -1,10 +1,10 @@
 {{ define "main" }}
-<article class="prose prose-invert prose-neutral max-w-none">
-  <div class="text-sm text-neutral-500 mb-4">
-    <a href="/{{ .Section }}/" class="text-blue-400 hover:text-blue-300">{{ .Section }}</a>
-  </div>
-  <h1 class="text-3xl font-bold border-b border-neutral-700 pb-2">{{ .Title }}</h1>
+<div class="mb-6">
+  <a href="/{{ .Section }}/" class="text-sm text-blue-400 hover:text-blue-300">{{ .Section }}</a>
+  <h1 class="text-3xl font-bold border-b border-neutral-700 pb-2 mt-2">{{ .Title }}</h1>
   <time class="text-sm text-neutral-500">{{ .Date.Format "2006-01-02" }}</time>
-  <div class="mt-6">{{ .Content }}</div>
+</div>
+<article class="prose prose-invert prose-neutral max-w-none">
+  {{ .Content }}
 </article>
 {{ end }}
