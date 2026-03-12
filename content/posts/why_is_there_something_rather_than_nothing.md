@@ -5,6 +5,13 @@ tags = ["essay", "public"]
 draft = false
 +++
 
+> Editor's note: This essay predates _Running Comes First_ and uses an
+> earlier consistency/invariance-first framing. Its core diagnostic
+> remains intact, but the underlying ontology is now better read in
+> process-first terms: invariance and continuity are appearances of a more
+> primitive self-sustaining process rather than the primitive itself.
+
+
 ## Why Is There Something Rather Than Nothing {#why-is-there-something-rather-than-nothing}
 
 _A note on method: this paper operates pre-formally. It argues from the
@@ -18,6 +25,27 @@ relations. Those are downstream representations. The claim is not that
 formal semantics are illegitimate, but that any formal semantics
 presupposes an executable discrimination floor. The argument targets
 what must already be in place for any such representation to function._
+
+
+### The Argument in Compressed Form {#the-argument-in-compressed-form}
+
+Something and nothing are both operations over a domain. Something: some
+x is y. Nothing: no x in y. "No milk in the fridge" works because the
+fridge is the domain and milk is absent from its contents. "Absolute
+nothing" means: no x in y, for all y --- a universal negation requiring
+a discourse frame in which "all domains" is a coherent range. The output
+constrains against the conditions that make it evaluable. The operation
+cannot run.
+
+In compressed form, the claim is this: "why is there something rather
+than nothing?" presupposes that absolute nothing is a candidate
+alternative. It is not. Absolute nothing is not merely difficult to
+specify; it is a specification that cancels the conditions required for
+discrimination, contrast, and evaluation. It can be written as a string,
+but it cannot be executed as a state-description. The question is not
+unanswered. It is expressible but not executable.
+
+What follows expands and defends this claim in full.
 
 
 ### The Argument {#the-argument}
