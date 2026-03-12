@@ -33,7 +33,7 @@ Invariance is what self-sustaining process looks like at lowest
 resolution. Difference is what it looks like when distinction
 stabilizes. Evaluation is what it looks like when distinction becomes
 directed, structured, and reflexive. Role-arity tracks these thresholds
-of explicitness. These are not assembly stages. They are increasingly explicit
+of explicitness. These are not assembly stages. The arity levels are focal lengths, not construction steps. The numbering reflects descriptive resolution, not temporal or ontological priority. They are increasingly explicit
 articulations of one underlying activity.
 
 A question's role-arity is the minimum number of functional roles that
