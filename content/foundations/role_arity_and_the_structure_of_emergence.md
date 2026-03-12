@@ -130,25 +130,29 @@ concept. Arity 1 is persistence without explicit partition.
 
 ## Arity 2: Difference {#arity-2-difference}
 
-Two roles. Two positions that do not collapse into one another. This and
+Two roles. What holds, and what does not hold against it. This and
 not-this. Inside and outside. 0 and 1. True and false as partition.
 
 At this resolution, self-sustaining process appears as stable
 distinction. What was implicit in persistence becomes explicit as
-separation, boundary, and contrast. Difference is not a second substance
-added onto invariance. It is the same underlying activity now holding a
-distinction strongly enough for the distinction itself to count.
+boundary --- the visible face of where carry-through fails or
+diverges. Difference is not a second substance added onto invariance.
+It is the same underlying activity now exhibiting contrast: what
+persists here does not persist there. Arity 2 is the resolution at
+which non-holding becomes structurally visible against holding.
 
-At arity 2, information becomes explicit as stable distinction. A
-difference that makes a difference requires at least two stable
-positions. At arity 1, something persists. At arity 2, partition becomes
-structurally available.
+This is why information becomes explicit at arity 2. A difference that
+makes a difference requires at least two stable positions --- one
+where something holds and one where it does not, or where it holds
+differently. At arity 1, something persists. At arity 2, the boundary
+between persisting and not-persisting becomes a structure in its own
+right.
 
 A - A = 0 bridges the arities. The invariance operation (arity 1)
-expressed across a difference (arity 2) yields zero --- the measurement
-that invariance holds. A - B ≠ 0 is the measurement that it doesn't.
-Every nonzero value is a degree of difference. Mathematics lives in the
-gap between zero and not-zero.
+expressed across a difference (arity 2) yields zero --- the
+measurement that invariance holds. A - B ≠ 0 is the measurement that
+it doesn't. Every nonzero value is a degree of divergence from
+carry-through. Mathematics lives in the gap between zero and not-zero.
 
 Two states can now hold as a partition. But nothing at this level yet
 determines membership in that partition. Determination is arity 3.
