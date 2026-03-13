@@ -19,7 +19,7 @@ draft = false
 
 Jeremy Howard proves the viability of shipping simple. A single Python
 file backed by a tiny on-disk database. FastHTML scales down to six
-lines. The entire application --- auth, routes, database, templates ---
+lines. The entire aplication --- auth, routes, database, templates ---
 lives in one file you can read top to bottom. There is no build step,
 no bundler, no deployment pipeline, no ops. You look at the file. You
 understand it. You change it. You ship it.
@@ -60,13 +60,13 @@ tagline is "the Firefox theme with too many options." FF-Ultima is
 honest about what it is. It is a configuration system for people who
 want to configure.
 
-{{< figure src="/ff-ultima.png" >}}
+{{< figure src="/ff-ultima.webp" >}}
 
 The third is Fennec.
 
-{{< figure src="/fennec-with-sidebar.png" >}}
+{{< figure src="/fennec-with-sidebar.webp" >}}
 
-{{< figure src="/fennec-without-sidebar.png" >}}
+{{< figure src="/fennec-without-sidebar.webp" >}}
 
 
 ## What Fennec Is {#what-fennec-is}
