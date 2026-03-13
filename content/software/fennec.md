@@ -37,36 +37,49 @@ Fennec applies this principle to browser configuration.
 
 There are three approaches to making Firefox usable in 2026.
 
-The first is to use a fork. Zen Browser is a full fork of Firefox with
-vertical tabs, workspaces, split views, theming, a command palette,
-glance previews, and a mod store. It has 40,000 stars on GitHub, an
-aggressive release cadence, and a community that genuinely cares about
-the product. Zen is good software. It has also been working through
-real challenges --- performance regressions that required removing
-features like rounded corners on Linux, and DRM content issues with
-Widevine licensing that have made streaming services unreliable. These
-are not criticisms. They are the inherent costs of maintaining a fork.
-Every fork accumulates the surface area of its own ambition, and Zen is
-ambitious.
+
+#### Zen Browser {#zen-browser}
 
 {{< figure src="/zen-browser.webp" >}}
 
-The second is to use an elaborate userChrome.css modification. FF-Ultima
-is the flagship here --- a theme with tab size options, autohiding
-options, spacing options, accessibility options, color scheme options,
-Sidebery integration options, Auto Tab Color integration options, and a
-settings surface in about:config that rivals some applications. Its own
-tagline is "the Firefox theme with too many options." FF-Ultima is
-honest about what it is. It is a configuration system for people who
-want to configure.
+Zen is a full fork of Firefox with vertical tabs, workspaces, split
+views, theming, a command palette, glance previews, and a mod store. It
+has 40,000 stars on GitHub, an aggressive release cadence, and a
+community that genuinely cares about the product. Zen is good software.
+It has also been working through real challenges --- performance
+regressions that required removing features like rounded corners on
+Linux, and DRM content issues with Widevine licensing that have made
+streaming services unreliable. These are not criticisms. They are the
+inherent costs of maintaining a fork. Every fork accumulates the surface
+area of its own ambition, and Zen is ambitious.
+
+
+#### FF-Ultima {#ff-ultima}
 
 {{< figure src="/ff-ultima.webp" >}}
 
-The third is Fennec.
+FF-Ultima is the flagship userChrome.css modification --- a theme with
+tab size options, autohiding options, spacing options, accessibility
+options, color scheme options, Sidebery integration options, Auto Tab
+Color integration options, and a settings surface in about:config that
+rivals some applications. Its own tagline is "the Firefox theme with too
+many options." FF-Ultima is honest about what it is. It is a
+configuration system for people who want to configure.
 
-{{< figure src="/fennec-with-sidebar.webp" >}}
 
-{{< figure src="/fennec-without-sidebar.webp" >}}
+#### Fennec {#fennec}
+
+{{< figure src="/fennec-with-sidebar.webp" caption="<span class=\"figure-number\">Figure 1: </span>Fennec CSS with sidebar shown" >}}
+
+Full UI mode. Sideberry's sidebar holds the vertical tabs and the URL
+bar. Everything Firefox normally scatters across the top of the window
+lives in one panel that you can toggle away.
+
+{{< figure src="/fennec-without-sidebar.webp" caption="<span class=\"figure-number\">Figure 2: </span>Fennec CSS with sidebar hidden" >}}
+
+Zen mode. The sidebar is gone. The content occupies every pixel. The
+window stays tiled. This is the state stock Firefox cannot reach without
+going fullscreen.
 
 
 ## What Fennec Is {#what-fennec-is}
