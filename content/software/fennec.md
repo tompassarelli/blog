@@ -60,9 +60,9 @@ want to configure.
 
 The third is Fennec.
 
-<video controls width="100%">
-  <source src="/fennec-zen-toggle.mp4" type="video/mp4">
-</video>
+{{< figure src="/fennec-with-sidebar.png" >}}
+
+{{< figure src="/fennec-without-sidebar.png" >}}
 
 
 ## What Fennec Is {#what-fennec-is}
