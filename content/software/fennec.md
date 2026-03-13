@@ -49,6 +49,8 @@ are not criticisms. They are the inherent costs of maintaining a fork.
 Every fork accumulates the surface area of its own ambition, and Zen is
 ambitious.
 
+{{< figure src="/zen-browser.webp" >}}
+
 The second is to use an elaborate userChrome.css modification. FF-Ultima
 is the flagship here --- a theme with tab size options, autohiding
 options, spacing options, accessibility options, color scheme options,
@@ -57,6 +59,8 @@ settings surface in about:config that rivals some applications. Its own
 tagline is "the Firefox theme with too many options." FF-Ultima is
 honest about what it is. It is a configuration system for people who
 want to configure.
+
+{{< figure src="/ff-ultima.png" >}}
 
 The third is Fennec.
 
