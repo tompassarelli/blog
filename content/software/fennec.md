@@ -9,8 +9,9 @@ draft = false
 > software configuration. The question is what essential value-add
 > could not be achieved through existing tools. Command palette ---
 > Vimium already exists. Vertical tab sidebar --- Sideberry already
-> exists. Tiling and split views --- your operating system already does
-> this. The only thing missing was the CSS that makes these tools feel
+> exists. Tiling and split views --- most operating systems and window
+> managers already handle this well. The only thing missing was the CSS
+> that makes these tools feel
 > like a single, cohesive browser. That is what Fennec is --- and
 > nothing more. See _What Carries Through_ for the structural claim.
 
@@ -19,12 +20,7 @@ This essay discusses [🦊 Fennec](https://github.com/tompassarelli/fennec), a p
 
 ## The Single-File Principle {#the-single-file-principle}
 
-Jeremy Howard proves the viability of shipping simple. A single Python
-file backed by a tiny on-disk database. FastHTML scales down to six
-lines. The entire aplication --- auth, routes, database, templates ---
-lives in one file you can read top to bottom. There is no build step,
-no bundler, no deployment pipeline, no ops. You look at the file. You
-understand it. You change it. You ship it.
+I have been taking some inspiration from Jeremy Howard's FastHTML. It does not require a frontend build step: a small app can live in a single Python file you can read top to bottom. Auth, routes, database, templates --- no bundler, no deployment pipeline, no ops. You look at the file. You understand it. You change it. You ship it.
 
 This is not a limitation. It is a design decision. The single-file
 constraint is load-bearing. It means the application is legible to its
@@ -65,8 +61,10 @@ tab size options, autohiding options, spacing options, accessibility
 options, color scheme options, Sidebery integration options, Auto Tab
 Color integration options, and a settings surface in about:config that
 rivals some applications. Its own tagline is "the Firefox theme with too
-many options." FF-Ultima is honest about what it is. It is a
-configuration system for people who want to configure.
+many options." FF-Ultima is honest about what it is. For users who want
+deep control over every visual detail, that breadth of configurability
+is genuinely valuable. It is a configuration system for people who want
+to configure.
 
 
 #### Fennec {#fennec}
@@ -99,7 +97,7 @@ You copy a CSS file into your profile's chrome folder. You paste another
 CSS file into Sideberry's style editor. You restart Firefox. You are
 done.
 
-There is no user.js. This is not a trivial omission. Most userChrome
+There is no user.js. This is not a trivial omission. Many userChrome
 themes ship a user.js that modifies Firefox's internal about:config
 preferences --- flags that control security behavior, TLS settings,
 certificate handling, safe browsing, and update mechanisms. The user.js
@@ -116,10 +114,10 @@ design decision. Solving these problems in pure CSS is harder upfront.
 It requires more careful planning, more knowledge of Firefox's internal
 DOM structure, and more willingness to find creative solutions within
 the constraint. But the constraint is the point. CSS can change how
-Firefox looks. It cannot change how Firefox behaves. The security
-boundary between presentation and configuration is preserved entirely.
-Your Firefox installation, with Fennec applied, has exactly the same
-security profile as your Firefox installation without it.
+Firefox looks. It cannot change how Firefox behaves. This helps preserve
+the security boundary between presentation and configuration. Fennec
+does not require changing Firefox's internal preference state, which
+avoids expanding the trust surface in the way user.js-based setups can.
 
 
 ## The Tiling Problem {#the-tiling-problem}
@@ -162,11 +160,11 @@ configurable flags.
 
 ([FF-Ultima's getting started guide](https://ff-ultima.github.io/docs/getting-started) gives a sense of the configuration surface.)
 
-Every one of these is a symptom of the same underlying condition: the
-project has accumulated enough complexity that it now requires its own
-support infrastructure. The support infrastructure is well-built --- the
-maintainer clearly cares about the experience --- but it exists because
-the thing being supported is complex enough to need it.
+A project with a broad configuration surface naturally develops
+documentation and tooling around it. The support infrastructure is
+well-built --- the maintainer clearly cares about the experience --- but
+its existence indicates a different maintenance model than what Fennec
+aims for.
 
 Zen is a fork. A fork means you are running someone else's build of
 Firefox. You are downstream of both Mozilla's decisions and Zen's
@@ -175,19 +173,20 @@ times per week. When Zen makes a UI choice you disagree with, you file
 an issue or you live with it. When performance requires removing visual
 features to stay usable, you lose them whether you had the problem or
 not. When Mozilla ships a breaking change, you wait for Zen to absorb
-it. The fork is a dependency. The dependency has a bus factor. The bus
-factor is a single maintainer.
+it. The fork is a dependency you do not control.
 
-But the deeper issue is what Zen is building. Zen reimplements a command
-palette --- Vimium already exists. Zen reimplements a vertical tab
-sidebar --- Sideberry already exists. Zen reimplements split views ---
-your window manager already tiles. Each of these reimplementations is a
-new surface that must be maintained, debugged, and kept compatible with
-upstream Firefox. Each is a feature that could instead be delegated to a
-mature, standalone tool with its own maintainer and its own track record.
-The maintenance cost of a fork is proportional to the distance between
-the fork and upstream. Zen maximizes that distance by rebuilding what
-already works elsewhere. Fennec minimizes it by building only the glue.
+But the deeper question is what Zen is building toward. There is real
+value in having a command palette, vertical tabs, and split views
+integrated into a single coherent interface --- the experience can be
+more polished than bolting together separate tools. But in my view, many
+of these capabilities are already handled well by mature standalone
+tools: Vimium for command palettes, Sideberry for vertical tabs, a
+tiling window manager for split views. Each reimplementation inside the
+fork is a new surface that must be maintained, debugged, and kept
+compatible with upstream Firefox. The maintenance cost of a fork is
+proportional to the distance between the fork and upstream. Zen accepts
+that distance as the cost of integration. Fennec minimizes it by
+building only the glue.
 
 Fennec has none of these problems because Fennec has almost nothing. You
 are running Firefox. You are running Sideberry, a mature and
@@ -230,11 +229,12 @@ substitute for.
 ## What Fennec Is Not {#what-fennec-is-not}
 
 Fennec is not for everyone. If you want workspaces, a command palette,
-and split views built into your browser --- rather than letting your
-operating system handle tiling, which is what an operating system is
-for --- use Zen. If you want a settings surface that lets you
-tune every pixel, use FF-Ultima. Both are good projects solving real
-problems for people who have those problems.
+and split views built into your browser, Zen is a strong option --- the
+integrated experience is its whole point. If you want a settings surface
+that lets you tune every pixel, use FF-Ultima. Both are good projects
+solving real problems for people who have those problems. I prefer to
+leave tiling to the window manager and keep the browser thinner. That
+preference is what Fennec is built around.
 
 Fennec is for people who want vertical tabs, a clean toggle between UI
 and zen mode, and a keyboard-driven workflow --- and who want those
