@@ -14,6 +14,8 @@ draft = false
 > like a single, cohesive browser. That is what Fennec is --- and
 > nothing more. See _What Carries Through_ for the structural claim.
 
+This essay discusses [Fennec](https://github.com/tompassarelli/fennec), a project I built --- a single CSS file that makes Firefox usable with vertical tabs and a zen mode toggle, and nothing else.
+
 
 ## The Single-File Principle {#the-single-file-principle}
 
