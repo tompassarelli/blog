@@ -531,12 +531,7 @@ until the right abstraction became visible.
 
 ### The real lesson {#the-real-lesson}
 
-The lesson here is not “I built a touchpad daemon.”
-
-The lesson is that a project gets better when you stop forcing it
-to live in the wrong boundary, and when you stop pretending that
-one more heuristic is the same thing as understanding the
-signal.
+A project gets better when you stop forcing it to live in the wrong boundary, and when you stop pretending that one more heuristic is the same thing as understanding the signal.
 
 Layerpad was not a mistake. The Kanata phase was not a mistake
 either. The early rolling-window algorithm was not a mistake.
@@ -548,5 +543,3 @@ What survived those stages was Glide: a standalone daemon with a
 cleaner conceptual boundary, a consumer-agnostic active/inactive
 signal, and an activation rule that came out of actual trace
 separation rather than just gut feel.
-
-That feels like a real project to me.

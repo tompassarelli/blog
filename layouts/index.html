@@ -1,15 +1,42 @@
 {{ define "main" }}
-{{ range .Site.Sections.ByWeight }}
+
+{{/* Start Here callout */}}
+{{ $start := .Site.GetPage "/foundations/start_here" }}
+{{ with $start }}
+<div class="mb-10 border border-neutral-800 rounded px-4 py-3">
+  <a href="{{ .RelPermalink }}" class="text-blue-400 hover:text-blue-300 font-semibold">Start Here</a>
+  <span class="text-neutral-500 text-sm ml-2">— a good place to begin if you're new</span>
+</div>
+{{ end }}
+
+{{/* Recent writing: 8 most recent posts across all sections */}}
 <section class="mb-10">
-  <h2 class="text-xl font-semibold text-neutral-300 mb-3 border-b border-neutral-800 pb-1">
-    <a href="{{ .RelPermalink }}" class="hover:text-blue-300">{{ .Title }}</a>
-  </h2>
-  {{ range .Pages.ByWeight }}
-  <div class="mb-2">
+  <h2 class="text-xl font-semibold text-neutral-300 mb-3 border-b border-neutral-800 pb-1">Recent writing</h2>
+  {{ $recent := slice }}
+  {{ range .Site.Sections }}
+    {{ range .Pages }}
+      {{ $recent = $recent | append . }}
+    {{ end }}
+  {{ end }}
+  {{ range first 8 (sort $recent "Date" "desc") }}
+  <div class="mb-2 flex flex-wrap items-baseline gap-x-2">
     <a href="{{ .RelPermalink }}" class="text-blue-400 hover:text-blue-300">{{ .Title }}</a>
-    <span class="text-neutral-500 text-sm ml-2">{{ .Date.Format "2006-01-02" }}</span>
+    <span class="text-neutral-600 text-sm">{{ .Section }}</span>
+    <span class="text-neutral-500 text-sm">{{ .Date.Format "2006-01-02" }}</span>
   </div>
   {{ end }}
 </section>
-{{ end }}
+
+{{/* Section index */}}
+<section>
+  <h2 class="text-xl font-semibold text-neutral-300 mb-3 border-b border-neutral-800 pb-1">Sections</h2>
+  <div class="flex flex-wrap gap-4">
+    {{ range .Site.Sections.ByWeight }}
+    <a href="{{ .RelPermalink }}" class="text-blue-400 hover:text-blue-300">
+      {{ .Title }} <span class="text-neutral-500 text-sm">({{ len .Pages }})</span>
+    </a>
+    {{ end }}
+  </div>
+</section>
+
 {{ end }}
