@@ -15,7 +15,9 @@
   {{ $recent := slice }}
   {{ range .Site.Sections }}
     {{ range .Pages }}
-      {{ $recent = $recent | append . }}
+      {{ if ne .File.ContentBaseName "start_here" }}
+        {{ $recent = $recent | append . }}
+      {{ end }}
     {{ end }}
   {{ end }}
   {{ range first 8 (sort $recent "Date" "desc") }}
