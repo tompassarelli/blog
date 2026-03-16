@@ -10,7 +10,8 @@ draft = false
 The project did not start as a Kanata fork.
 
 It started as Layerpad: a standalone experiment in using touchpad
-activity as a modifier signal.
+activity as a modifier signal. The source lives at
+[github.com/tompassarelli/glide](https://github.com/tompassarelli/glide).
 
 The original idea was simple. When I got the Framework 13, I
 immediately missed the ThinkPad touchpad buttons. Modern touchpads
