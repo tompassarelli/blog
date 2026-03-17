@@ -15,10 +15,7 @@ weight = 5
 > repaired rather than reasoned through.
 
 
-## Why Paraconsistent Logic Has No Use Case That Classical Logic With a Consistency Gate Does Not Handle With Strictly Greater Inferential Power {#why-paraconsistent-logic-has-no-use-case-that-classical-logic-with-a-consistency-gate-does-not-handle-with-strictly-greater-inferential-power}
-
-
-### Abstract {#abstract}
+## Abstract {#abstract}
 
 Paraconsistent logic exists to solve a problem that should never reach
 the inference engine.
@@ -40,7 +37,7 @@ either provenance-forgetting aggregation, permanent rule weakening, or a
 computational shortcut standing in for branch enumeration.
 
 
-### The Architecture of Evaluation {#the-architecture-of-evaluation}
+## The Architecture of Evaluation {#the-architecture-of-evaluation}
 
 Reasoning is not one operation. It is a sequence of evaluations, each
 with its own domain and preconditions.
@@ -75,7 +72,7 @@ architectural point does not. Reasoning only works where the relevant
 preconditions for discrimination are intact.
 
 
-### Explosion, Correctly Located {#explosion-correctly-located}
+## Explosion, Correctly Located {#explosion-correctly-located}
 
 The standard presentation of explosion (ex contradictione quodlibet,
 ECQ) is as follows. Given a premise set containing P and ¬P, for any
@@ -102,7 +99,7 @@ This diagnosis is wrong. The inference rules are not the locus of
 failure. The failure occurs before any inference rule fires.
 
 
-### The Missing Layer {#the-missing-layer}
+## The Missing Layer {#the-missing-layer}
 
 Consider what the premise set {P, ¬P} asserts. It asserts that some
 proposition is both the case and not the case. This is an evaluation
@@ -141,7 +138,7 @@ disjunctive syllogism. The absence of a validation gate between
 syntactic evaluation and proof-theoretic evaluation.
 
 
-### Formal Specification {#formal-specification}
+## Formal Specification {#formal-specification}
 
 The fix is a new evaluation layer --- layer 1.5 --- inserted between
 syntactic evaluation and proof-theoretic evaluation. Its specification
@@ -202,7 +199,7 @@ pass through the gate. The engine runs on everything it can trust. Only
 tasks depending on the contested premises are flagged as blocked.
 
 
-### Credulous Reasoning Without Paraconsistency {#credulous-reasoning-without-paraconsistency}
+## Credulous Reasoning Without Paraconsistency {#credulous-reasoning-without-paraconsistency}
 
 A natural objection: the gated architecture refuses to derive any
 conclusion that depends on an unresolved contradiction. But sometimes
@@ -322,7 +319,7 @@ consequences of unresolved conflict. It explores them with more power
 than paraconsistency has available.
 
 
-### Operational Definitions: Rejection vs. Tolerance {#operational-definitions-rejection-vs.-tolerance}
+## Operational Definitions: Rejection vs. Tolerance {#operational-definitions-rejection-vs.-tolerance}
 
 Two terms require operational definitions to prevent equivocation.
 
@@ -349,7 +346,7 @@ redefined. The engine does not know or care that a contradiction was
 detected upstream.
 
 
-### The Universal Tradeoff {#the-universal-tradeoff}
+## The Universal Tradeoff {#the-universal-tradeoff}
 
 The relationship between inconsistent premises and classical inference
 is not a contingent feature of particular paraconsistent systems. It is
@@ -393,7 +390,7 @@ time, with zero effect on the engine's behavior for consistent premise
 sets.
 
 
-### Decidability and the Engineering Boundary {#decidability-and-the-engineering-boundary}
+## Decidability and the Engineering Boundary {#decidability-and-the-engineering-boundary}
 
 A necessary clarification: consistency checking is computationally hard.
 For propositional logic, determining whether a set of formulas is
@@ -435,7 +432,7 @@ engine at full power. These are different engineering philosophies with
 different tradeoff profiles. This paper advocates the second.
 
 
-### Ideal Specification vs. Practical Implementation {#ideal-specification-vs-practical-implementation}
+## Ideal Specification vs. Practical Implementation {#ideal-specification-vs-practical-implementation}
 
 The formal specification is clean: no inconsistent premise set is in
 the domain of consequence. Consequence is a partial function, defined
@@ -496,7 +493,7 @@ defended. The gate architecture treats inconsistency as the former.
 Paraconsistency treats it as the latter.
 
 
-### Connection to Evaluation Foundations {#connection-to-evaluation-foundations}
+## Connection to Evaluation Foundations {#connection-to-evaluation-foundations}
 
 The argument rests on a claim about what evaluation requires, developed
 fully in Passarelli (2026).
@@ -563,7 +560,7 @@ from the evaluation process. They are a notation for non-execution,
 mistaken for a result.
 
 
-### Connection to the Broader Framework {#connection-to-the-broader-framework}
+## Connection to the Broader Framework {#connection-to-the-broader-framework}
 
 Within the larger body of work, this paper identifies one species of
 non-executable input: contradictory premise sets that destroy the
@@ -581,7 +578,7 @@ the response is the same in form: do not romanticize the output of an
 ungated engine. Validate the input first.
 
 
-### The Category Error {#the-category-error}
+## The Category Error {#the-category-error}
 
 The motivation for paraconsistency often begins with the observation:
 "contradictions appear in our information." This is true. Contradictions
@@ -630,7 +627,7 @@ can check yet, a flag on the map that says "conflict: unresolved" and a
 system that can show what follows if each label is correct.
 
 
-### Compact Argument {#compact-argument}
+## Compact Argument {#compact-argument}
 
 Classical logic's inference rules are sound. Explosion is not a defect
 in those rules. It is the correct propagation of an error state produced
@@ -696,10 +693,10 @@ aggregation, keeping both explicit. It is inconsistency-rejecting, not
 inconsistency-tolerant. It renders paraconsistent logic unnecessary.
 
 
-### Objections and Replies {#objections-and-replies}
+## Objections and Replies {#objections-and-replies}
 
 
-#### "The gate just halts the system. That's refusal mode, not a substitute for paraconsistency." {#the-gate-just-halts-the-system}
+### "The gate just halts the system. That's refusal mode, not a substitute for paraconsistency." {#the-gate-just-halts-the-system}
 
 The gate does not halt the system. It halts inference on the specific
 contradictory pair. Every premise not involved in the contradiction
@@ -709,7 +706,7 @@ Tasks depending on the contradictory pair are flagged as blocked pending
 resolution. This is precision, not refusal.
 
 
-#### "Quarantine is functionally the same as paraconsistency." {#quarantine-is-functionally-the-same-as-paraconsistency}
+### "Quarantine is functionally the same as paraconsistency." {#quarantine-is-functionally-the-same-as-paraconsistency}
 
 Paraconsistency modifies the consequence relation --- it changes what
 follows from what. The gate does not touch the consequence relation. It
@@ -722,7 +719,7 @@ protocol to tolerate malicious packets changes the protocol for all
 traffic.
 
 
-#### "The gated system defines a non-classical consequence relation over the original inconsistent input." {#the-gated-system-defines-a-non-classical-consequence-relation}
+### "The gated system defines a non-classical consequence relation over the original inconsistent input." {#the-gated-system-defines-a-non-classical-consequence-relation}
 
 This objection formalizes the gated system as Cgate(Γ) = Ccl(Filter(Γ)),
 observes that Cgate(Γ) ≠ Ccl(Γ) when Γ is inconsistent, and concludes
@@ -740,7 +737,7 @@ inputs. The gate architecture refuses that totalization. That refusal is
 the thesis.
 
 
-#### "Your filter policy is a choice that corresponds to a known paraconsistent stance." {#your-filter-policy-is-a-choice}
+### "Your filter policy is a choice that corresponds to a known paraconsistent stance." {#your-filter-policy-is-a-choice}
 
 Yes, it is a choice, in the same way that syntactic evaluation is a
 choice. The grammar's production rules are choices. The choice to reject
@@ -750,7 +747,7 @@ a precondition. The consistency gate is a precondition. Preconditions
 are not modifications to the thing they gate.
 
 
-#### "Paraconsistency can do credulous reasoning --- derive what follows from each side of a contradiction. Your gate can't." {#paraconsistency-can-do-credulous-reasoning}
+### "Paraconsistency can do credulous reasoning --- derive what follows from each side of a contradiction. Your gate can't." {#paraconsistency-can-do-credulous-reasoning}
 
 The gate does this with more power than paraconsistency. When the
 validator identifies {φ, ¬φ}, it generates two consistent views: Γ \\ {¬φ}
@@ -763,7 +760,7 @@ engine, the gate performs on consistent views with the full engine,
 twice.
 
 
-#### "If you need a single output, you need an aggregation policy. That's where paraconsistent consequence relations live." {#if-you-need-a-single-output}
+### "If you need a single output, you need an aggregation policy. That's where paraconsistent consequence relations live." {#if-you-need-a-single-output}
 
 Aggregation is not inference. It is a selection layer downstream of
 inference. The inference has already happened --- classically, at full
@@ -777,7 +774,7 @@ different aggregation policies can be swapped without touching the
 engine, and the full branch structure is preserved for inspection.
 
 
-#### "Paraconsistency is at least a computationally tractable one-shot approximation that avoids enumerating repairs." {#paraconsistency-is-at-least-a-computational-shortcut}
+### "Paraconsistency is at least a computationally tractable one-shot approximation that avoids enumerating repairs." {#paraconsistency-is-at-least-a-computational-shortcut}
 
 This concedes the logical point entirely and retreats to engineering.
 Even there, it fails. Paraconsistency as a shortcut is a lossy
@@ -789,7 +786,7 @@ lossless image formats unnecessary. A paraconsistent shortcut is not a
 use case that makes classical logic with a consistency gate unnecessary.
 
 
-#### "Paraconsistency can derive conclusions no single consistent view supports --- like s from (q ∧ r) → s where q and r come from opposite sides of a contradiction." {#paraconsistency-can-derive-conclusions-no-single-view-supports}
+### "Paraconsistency can derive conclusions no single consistent view supports --- like s from (q ∧ r) → s where q and r come from opposite sides of a contradiction." {#paraconsistency-can-derive-conclusions-no-single-view-supports}
 
 This is the strongest-looking counterexample and it fails. The
 derivation of s requires treating q and r as jointly available. But q
@@ -803,7 +800,7 @@ the fusion of inference and conflict policy that the gate architecture
 forbids.
 
 
-#### "Two conflicting records in a database both exist. That state executes." {#two-conflicting-records-both-exist}
+### "Two conflicting records in a database both exist. That state executes." {#two-conflicting-records-both-exist}
 
 Two records existing is not {P, ¬P}. It is two data entries. The
 physical state --- record A exists and record B exists --- is perfectly
@@ -816,7 +813,7 @@ of interpretation, and the correct response is to investigate which
 component of the interpretation is wrong.
 
 
-#### "You must either halt, restrict inference, or revise. There is no fourth option." {#you-must-either-halt-restrict-or-revise}
+### "You must either halt, restrict inference, or revise. There is no fourth option." {#you-must-either-halt-restrict-or-revise}
 
 The gated system does not halt inference (it continues on uncontested
 premises), does not restrict inference (the engine runs full classical
@@ -828,7 +825,7 @@ inference." The consistency gate is the same operation at a different
 level.
 
 
-#### "Consistency checking is undecidable. Your gate can't always fire." {#consistency-checking-is-undecidable}
+### "Consistency checking is undecidable. Your gate can't always fire." {#consistency-checking-is-undecidable}
 
 Correct for first-order logic in full generality. The specification and
 the implementation are separate concerns. The specification --- no
@@ -841,7 +838,7 @@ abolishes syntactic validation because parsing is hard in general. They
 build parsers for the grammars they use.
 
 
-#### "Some contradictions only emerge after inference. The gate must either run inference internally or miss them --- and if it catches them later, you have a nonmonotonic revision process, not a pre-inference gate." {#distributed-contradictions}
+### "Some contradictions only emerge after inference. The gate must either run inference internally or miss them --- and if it catches them later, you have a nonmonotonic revision process, not a pre-inference gate." {#distributed-contradictions}
 
 Correct at the implementation level, and the paper acknowledges this
 explicitly. Validation may require sophisticated procedures, including
@@ -870,7 +867,7 @@ paraconsistency any more than a parser that occasionally accepts a
 malformed input and later rejects it has adopted a permissive grammar.
 
 
-#### "The system is really inconsistency-tolerant, just implemented differently." {#the-system-is-really-inconsistency-tolerant}
+### "The system is really inconsistency-tolerant, just implemented differently." {#the-system-is-really-inconsistency-tolerant}
 
 Under the operational definitions given in this paper: to tolerate
 inconsistency is to continue deriving conclusions from a premise set
@@ -883,7 +880,7 @@ repair, never tolerance. Calling this "tolerance" reverses the meaning
 of the architecture.
 
 
-#### "Paraconsistency's metalanguage being classical doesn't undermine its object-level claims." {#paraconsistencys-metalanguage-being-classical}
+### "Paraconsistency's metalanguage being classical doesn't undermine its object-level claims." {#paraconsistencys-metalanguage-being-classical}
 
 The challenge is not "you used classical tools." The challenge is that
 paraconsistency's thesis --- evaluation can tolerate contradiction ---
@@ -897,7 +894,7 @@ contradiction-shaped strings. The evaluation that certifies the object
 language does not tolerate contradiction.
 
 
-#### "You've declared inconsistent Γ inadmissible. That's the disputed point, not a theorem." {#youve-declared-inconsistent-gamma-inadmissible}
+### "You've declared inconsistent Γ inadmissible. That's the disputed point, not a theorem." {#youve-declared-inconsistent-gamma-inadmissible}
 
 Yes, it is a policy choice. So is rejecting ill-formed strings. The
 policy is justified because the evaluation operation the consequence
@@ -912,7 +909,7 @@ gate architecture treats failed validation as a type error and routes it
 to diagnosis, not inference.
 
 
-#### "Dialetheism says some contradictions are true. Your framework just assumes otherwise." {#dialetheism-says-some-contradictions-are-true}
+### "Dialetheism says some contradictions are true. Your framework just assumes otherwise." {#dialetheism-says-some-contradictions-are-true}
 
 This paper rejects dialetheism on explicit grounds. "True" is an
 evaluation exit-condition --- what evaluation returns when it succeeds.
@@ -925,7 +922,7 @@ non-execution, mistaken for a result. This is not an assumption. It is a
 consequence of what evaluation is, as developed in Passarelli (2026).
 
 
-### What Paraconsistency Got Right and What It Got Wrong {#what-paraconsistency-got-right-and-what-it-got-wrong}
+## What Paraconsistency Got Right and What It Got Wrong {#what-paraconsistency-got-right-and-what-it-got-wrong}
 
 Paraconsistency correctly identified a real problem: classical logic's
 behavior on contradictory input is useless. An inference engine that
@@ -940,11 +937,11 @@ bug. It is the correct diagnostic signal that a precondition has been
 violated. The correct response was always a gate, not a patch.
 
 
-### Author {#author}
+## Author {#author}
 
 Tom Passarelli
 
 
-### License {#license}
+## License {#license}
 
 CC0. This work is in the public domain.

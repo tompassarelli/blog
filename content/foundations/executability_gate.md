@@ -2,15 +2,12 @@
 title = "The Executability Gate: Anchor-Failure Detection (V₂)"
 date = 2026-03-12T19:48:00+07:00
 slug = "the-executability-gate"
-tags = ["public"]
+tags = ["public", "essay"]
 draft = false
 weight = 6
 +++
 
-## The Executability Gate: Anchor-Failure Detection (V₂) {#the-executability-gate-anchor-failure-detection-v₂}
-
-
-### Extending the Consistency Gate {#extending-the-consistency-gate}
+## Extending the Consistency Gate {#extending-the-consistency-gate}
 
 The Consistency Gate (Passarelli 2026) specifies a validator V₁ that
 catches substrate-cancellation: premise sets containing {φ, ¬φ} are
@@ -28,7 +25,7 @@ checking whether the evaluative dependencies of an input are
 well-founded.
 
 
-### The Problem V₂ Solves {#the-problem-v₂-solves}
+## The Problem V₂ Solves {#the-problem-v₂-solves}
 
 V₁ catches bad premises --- content that is already in the premise set
 before the engine runs. The classical objection to extending the gate to
@@ -51,7 +48,7 @@ input to the proof-theoretic engine for derivation of consequences,
 requests an evaluation that terminates.
 
 
-### Definitions {#definitions}
+## Definitions {#definitions}
 
 **Evaluative request.** A triple R = ⟨e, v, S⟩ where e is a well-formed
 expression, v is a verdict type (truth, provability, halting,
@@ -187,7 +184,7 @@ request already in the path, and no exit from the cycle reaches a
 grounded target.
 
 
-### Formal Specification {#formal-specification}
+## Formal Specification {#formal-specification}
 
 V₂ does not range over bare expressions. An expression in isolation is
 content. It becomes an evaluative request when it is submitted to an
@@ -220,7 +217,7 @@ submission of e for verdict v in system S --- because the evaluation R
 requests does not terminate.
 
 
-### The Full Gate {#the-full-gate}
+## The Full Gate {#the-full-gate}
 
 The executability gate is the conjunction of V₁ and V₂.
 
@@ -241,7 +238,7 @@ evaluations that terminate. Layer 2 runs the full classical engine on
 everything that passes.
 
 
-### Application: The Liar {#application-the-liar}
+## Application: The Liar {#application-the-liar}
 
 "This statement is false."
 
@@ -266,7 +263,7 @@ The string L remains as content. The evaluative request --- determine
 L's truth value in T --- is not submitted to the engine.
 
 
-### Application: Turing's D(D) {#application-turings-dd}
+## Application: Turing's D(D) {#application-turings-dd}
 
 Turing's proof constructs, within a computational framework F:
 
@@ -321,7 +318,7 @@ not the identity of the input. What V₂ checks is the shape of the
 dependency graph, regardless of how it was generated.
 
 
-### Application: Gödel's G {#application-gödels-g}
+## Application: Gödel's G {#application-gödels-g}
 
 Gödel's proof constructs, within a formal system S of sufficient
 expressive power:
@@ -398,7 +395,7 @@ whose provability is defined as a function of its own provability, is
 provable --- is a non-terminating evaluative request.
 
 
-### Application: Non-Self-Referential Arithmetic (the "passes" case) {#application-non-self-referential-arithmetic-the-passes-case}
+## Application: Non-Self-Referential Arithmetic (the "passes" case) {#application-non-self-referential-arithmetic-the-passes-case}
 
 "Is the Goldbach conjecture provable in Peano Arithmetic?"
 
@@ -450,7 +447,7 @@ may not resolve them. That is the engine's business. The gate's business
 is ensuring the input is executable.
 
 
-### What V₂ Does Not Do {#what-v₂-does-not-do}
+## What V₂ Does Not Do {#what-v₂-does-not-do}
 
 V₂ does not ban self-reference. Programs that examine their own source
 code, formal systems that represent their own syntax, recursive
@@ -478,7 +475,7 @@ well-founded evaluative requests that pass the gate. Their difficulty is
 in the engine, not the request.
 
 
-### The Executability Criterion, Unified {#the-executability-criterion-unified}
+## The Executability Criterion, Unified {#the-executability-criterion-unified}
 
 The full executability gate enforces one condition with two
 manifestations:
@@ -506,7 +503,7 @@ diagnostics. Completable requests enter the engine at full classical
 power.
 
 
-### Decidability of V₂ {#decidability-of-v₂}
+## Decidability of V₂ {#decidability-of-v₂}
 
 The same engineering caveat from the Consistency Gate paper applies.
 Detecting arbitrary dependency cycles in the general case is undecidable
@@ -538,7 +535,7 @@ is the constraint. Its implementation is engineering. The computational
 difficulty of implementation does not collapse the architectural claim.
 
 
-### Compact Summary {#compact-summary}
+## Compact Summary {#compact-summary}
 
 V₂ checks whether the evaluative dependencies of a request are
 well-founded. An evaluative request is a triple ⟨e, v, S⟩: expression,
@@ -577,11 +574,11 @@ engine without modification. Everything that fails is held as content
 and returned as a diagnostic.
 
 
-### Author {#author}
+## Author {#author}
 
 Tom Passarelli
 
 
-### License {#license}
+## License {#license}
 
 CC0. This work is in the public domain.
