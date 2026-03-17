@@ -478,7 +478,11 @@ contradiction was never in the domain of consequence --- the system
 was mistaken about its status, not operating under a
 contradiction-tolerant policy. When the mistake is discovered, the
 architecture's response is retraction and repair, not continued
-derivation from known-inconsistent premises.
+derivation from known-inconsistent premises. The implementation is
+nonmonotonic at the level of system state --- conclusions may be
+retracted as the system's knowledge improves --- but not paraconsistent
+at the level of consequence. The consequence relation is never redefined
+to accept contradictory input.
 
 Temporary undetected inconsistency in an implementation is not the same
 thing as principled contradiction-tolerance in the consequence relation.
@@ -666,6 +670,16 @@ permanently and globally, weakening every derivation the system
 performs, including the vast majority that involve no contradictions.
 Paraconsistency buries the contradiction inside the reasoning process
 rather than surfacing it for resolution.
+
+Any purported residual use case for paraconsistency must fall into one
+of three categories: branch-wise reasoning under conflict, aggregation
+of branch results into a single presentation, or computational shortcut
+under bounded resources. The first is handled by running the full
+classical engine on each consistent view. The second is downstream
+policy over branch results, not consequence. The third is an engineering
+approximation --- a lossy heuristic standing in for something the
+correct architecture does without weakening the engine. No fourth
+category has been identified.
 
 The gated architecture preserves every classical inference rule, imposes
 zero inferential cost on consistent premise sets, surfaces
