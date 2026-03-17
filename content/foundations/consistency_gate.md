@@ -10,8 +10,8 @@ weight = 5
 > Editor's note: This essay predates _Running Comes First_ but has been
 > revised into alignment with its process-first framing. The core claim
 > remains the same: contradiction is not a problem for the inference
-> engine to tolerate, but a failed input condition that should be caught
-> before inference begins.
+> engine to tolerate, but a failed input condition that should be
+> diagnosed and excluded from the domain of consequence.
 
 
 ## Why Paraconsistent Logic Has No Use Case That Classical Logic With a Consistency Gate Does Not Handle With Strictly Greater Inferential Power {#why-paraconsistent-logic-has-no-use-case-that-classical-logic-with-a-consistency-gate-does-not-handle-with-strictly-greater-inferential-power}
@@ -32,8 +32,10 @@ proof-theoretic consequence.
 This paper identifies that missing layer, specifies it formally, and
 argues that once it is added, paraconsistent consequence relations have
 no remaining logical use case. Every reasoning task paraconsistency is
-supposed to handle can be handled by a gated classical architecture with
-strictly greater inferential power.
+supposed to handle can be handled by a gated classical architecture ---
+one that runs the full engine on each validated branch, sacrifices no
+inference rule, and exposes every apparent paraconsistent advantage as
+either provenance-forgetting aggregation or permanent rule weakening.
 
 
 ### The Architecture of Evaluation {#the-architecture-of-evaluation}
@@ -252,13 +254,20 @@ aggregation is a selection layer.
 Paraconsistent consequence relations bake aggregation into inference.
 They fuse the question "what follows from what" with the question "what
 to present when sources conflict" into a single modified consequence
-relation. The gated architecture separates them. The consequence
-relation handles inference. A separate layer handles aggregation. This
-separation is architecturally superior: different aggregation policies
-can be swapped without modifying the engine, the inference on each
-branch is fully classical, and the branch structure is preserved for
-inspection even after aggregation. Paraconsistency's fusion of inference
-and aggregation is a design flaw, not a feature.
+relation. The gated architecture separates them cleanly: branch-wise
+inference is classical --- each consistent view gets the full engine,
+every rule, no restrictions. Aggregation is a downstream policy over
+branch results --- intersection, union, priority, or any other
+selection criterion appropriate to the application. These are different
+operations answering different questions. Inference asks what follows
+from a given consistent set of premises. Aggregation asks what to do
+with the results when multiple consistent sets arise from a
+contradiction. Paraconsistency collapses both into a single modified
+consequence relation, which means the engine must be weakened everywhere
+to handle a concern --- conflict resolution --- that belongs to a
+separate architectural layer. The fusion is not a feature. It is a
+failure to distinguish the level at which inference operates from the
+level at which its results are consumed.
 
 A more sophisticated objection: paraconsistency can sometimes derive
 conclusions that no single consistent view supports. Consider a premise
@@ -333,12 +342,15 @@ object. Proceed only on validated subsets from which the contradiction
 has been removed. This is what the consistency gate does.
 
 Under these definitions, the gated system is inconsistency-rejecting. It
-does not reason in the presence of inconsistency. It ensures
-inconsistency is absent before reasoning begins. The fact that the
-system continues operating on consistent subsets of the original premise
-set is not tolerance. It is the same behavior as a system that receives
-a fresh, consistent premise set. The engine does not know or care that a
-contradiction was detected upstream.
+does not reason in the presence of known inconsistency. When
+inconsistency is detected --- whether at initial admission or through
+later derivational work --- the contaminated premises are removed and
+any conclusions depending on them are retracted. The engine then
+operates on the restored validated context. The fact that detection may
+be delayed does not convert the architecture into tolerance. It means
+enforcement has a latency, not that the consequence relation has been
+redefined. The engine does not know or care that a contradiction was
+detected upstream.
 
 
 ### The Universal Tradeoff {#the-universal-tradeoff}
@@ -425,6 +437,63 @@ improve the checking. The first response permanently weakens the engine
 for all input. The second invests in better validation while keeping the
 engine at full power. These are different engineering philosophies with
 different tradeoff profiles. This paper advocates the second.
+
+
+### Ideal Specification vs. Practical Implementation {#ideal-specification-vs-practical-implementation}
+
+The formal specification is clean: no inconsistent premise set is in
+the domain of consequence. Consequence is a partial function, defined
+only on validated input. This is the logical thesis, and it is not
+approximate.
+
+Implementation is another matter. Some contradictions are explicit
+surface pairs --- {φ, ¬φ} sitting in the premise set, caught
+immediately at admission. Others are distributed: they emerge only
+after derivation from multiple premises, background assumptions, or
+later additions to an evolving corpus. A premise set that is consistent
+at time _t_ may become inconsistent at _t+1_ when a new formula is added,
+or may harbor a latent contradiction that surfaces only after
+substantial inferential work.
+
+This means a realistic implementation cannot treat consistency
+validation as a single checkpoint that fires once at the gate and never
+again. It requires:
+
+-   _Incremental validation_: each new premise is checked against the
+    existing validated set at admission, but validation does not stop
+    there.
+-   _Ongoing monitoring_: derivational work may expose contradictions not
+    visible at the surface level. When it does, the system flags the
+    failure and halts inference on the affected premises.
+-   _Provenance tracking_: conclusions carry dependency records. When a
+    contradiction is diagnosed in premises that have already been used in
+    derivations, the system identifies which conclusions depend on the
+    now-contaminated premises.
+-   _Retraction_: conclusions whose provenance includes diagnosed premises
+    are withdrawn. The system restores a validated reasoning context ---
+    one in which the contaminated premises and their downstream
+    consequences have been removed --- and re-derives as needed.
+
+None of this concedes anything to paraconsistency. The distinction that
+matters is between the specification of consequence and the temporal
+dynamics of detection. The specification is unchanged: consequence is
+defined only on consistent premise sets. A premise set that passes
+validation at admission but is later found to harbor a distributed
+contradiction was never in the domain of consequence --- the system
+was mistaken about its status, not operating under a
+contradiction-tolerant policy. When the mistake is discovered, the
+architecture's response is retraction and repair, not continued
+derivation from known-inconsistent premises.
+
+Temporary undetected inconsistency in an implementation is not the same
+thing as principled contradiction-tolerance in the consequence relation.
+The first is an enforcement lag --- a gap between the specification and
+the system's current knowledge of whether the specification is met. The
+second is a redesign of the consequence relation to accept
+contradictory input as legitimate. These are categorically different.
+Detection latency is a bug to be reduced. Tolerance is a feature to be
+defended. The gate architecture treats inconsistency as the former.
+Paraconsistency treats it as the latter.
 
 
 ### Connection to Evaluation Foundations {#connection-to-evaluation-foundations}
@@ -574,7 +643,8 @@ formulation lacks a validation layer between syntactic evaluation (layer
 checked individually. The set is never checked as a whole.
 
 The fix: a consistency gate (layer 1.5) that validates premise sets for
-joint consistency before they reach the inference engine. Formally,
+joint consistency and ensures no contradictory input persists as a live
+premise in the inference engine. Formally,
 consequence is a partial function defined only on consistent premise
 sets. Inconsistent sets are not in its domain, the same way malformed
 strings are not in the domain of proof-theoretic evaluation. When the
@@ -761,13 +831,46 @@ abolishes syntactic validation because parsing is hard in general. They
 build parsers for the grammars they use.
 
 
+#### "Some contradictions only emerge after inference. The gate must either run inference internally or miss them --- and if it catches them later, you have a nonmonotonic revision process, not a pre-inference gate." {#distributed-contradictions}
+
+Correct at the implementation level, and the paper acknowledges this
+explicitly. Validation may require sophisticated procedures, including
+derivation-like checks, just as syntactic validation may require
+nontrivial parsing machinery. The complexity of the procedure does not
+collapse it into the thing it validates. Parsing can involve substantial
+computation --- backtracking, lookahead, even Turing-complete
+recognition for some grammar classes --- without turning syntax into
+proof theory. Admissibility checking can use inference-like procedures
+without turning admissibility into consequence. The question is not what
+tools validation uses internally, but what role it plays in the
+architecture: it determines whether input enters the domain of
+consequence, not what follows from it once there.
+
+When a distributed contradiction is discovered after inference has
+already proceeded on premises that appeared consistent, the architecture
+retracts conclusions whose provenance depends on the now-diagnosed
+premises and restores a validated reasoning context. This is revision
+forced by imperfect detection, not an admission that contradiction is a
+legitimate premise-state. The stance remains rejection-and-repair: the
+system never continues deriving from premises it has identified as
+contradictory. It corrects its earlier mistaken trust in those premises
+and cleans up the consequences of that mistake. The fact that cleanup is
+sometimes necessary does not convert the architecture into
+paraconsistency any more than a parser that occasionally accepts a
+malformed input and later rejects it has adopted a permissive grammar.
+
+
 #### "The system is really inconsistency-tolerant, just implemented differently." {#the-system-is-really-inconsistency-tolerant}
 
 Under the operational definitions given in this paper: to tolerate
 inconsistency is to continue deriving conclusions from a premise set
 that contains an identified contradiction. The gated system never does
-this. It removes the contradiction before reasoning begins. Calling this
-"tolerance" reverses the meaning of the architecture.
+this. When a contradiction is identified --- whether at initial
+validation or through later detection --- it is removed, and
+conclusions derived from contaminated premises are retracted. The
+system's stance toward detected inconsistency is always rejection and
+repair, never tolerance. Calling this "tolerance" reverses the meaning
+of the architecture.
 
 
 #### "Paraconsistency's metalanguage being classical doesn't undermine its object-level claims." {#paraconsistencys-metalanguage-being-classical}
