@@ -5,8 +5,6 @@ tags = ["public", "software", "linux", "input"]
 draft = false
 +++
 
-## The origin {#the-origin}
-
 The project did not start as a Kanata fork.
 
 It started as Layerpad: a standalone experiment in using touchpad
@@ -47,7 +45,7 @@ That was the actual starting point.
 Only after that did the Kanata question emerge.
 
 
-### The tempting middle phase: maybe this should just be a Kanata feature {#the-tempting-middle-phase-maybe-this-should-just-be-a-kanata-feature}
+## The tempting middle phase: maybe this should just be a Kanata feature {#the-tempting-middle-phase-maybe-this-should-just-be-a-kanata-feature}
 
 Once Layerpad already existed and had already moved into Rust, it
 became natural to ask whether the behavior should live inside
@@ -78,7 +76,7 @@ the implementation into Kanata and upstream it properly.
 That was the middle phase of the project.
 
 
-### Thinking like a maintainer changed the answer {#thinking-like-a-maintainer-changed-the-answer}
+## Thinking like a maintainer changed the answer {#thinking-like-a-maintainer-changed-the-answer}
 
 The more I thought about that path, the less the question became
 “can this be implemented?” and the more it became “does this
@@ -126,7 +124,7 @@ That was the real turning point.
 Not rejection. Clarification.
 
 
-### The project was never “touchpad support for Kanata” {#the-project-was-never-touchpad-support-for-kanata}
+## The project was never “touchpad support for Kanata” {#the-project-was-never-touchpad-support-for-kanata}
 
 Once I stopped treating Kanata as the natural home for the logic,
 the actual shape of the project became much clearer.
@@ -163,7 +161,7 @@ downstream behavior.
 That shift in naming reflected a real shift in understanding.
 
 
-### The abstraction got cleaner when I stopped centering press/release {#the-abstraction-got-cleaner-when-i-stopped-centering-press-release}
+## The abstraction got cleaner when I stopped centering press/release {#the-abstraction-got-cleaner-when-i-stopped-centering-press-release}
 
 One of the more useful conceptual upgrades was realizing that
 press/release is not the actual idea.
@@ -208,7 +206,7 @@ That boundary is one of the healthiest things that happened to
 the project.
 
 
-### The first algorithmic trap: tuning by feel {#the-first-algorithmic-trap-tuning-by-feel}
+## The first algorithmic trap: tuning by feel {#the-first-algorithmic-trap-tuning-by-feel}
 
 Even after the project boundary got cleaner, the implementation
 still had a problem.
@@ -242,7 +240,7 @@ a project almost works, it is very easy to start worshipping
 knobs instead of improving the model.
 
 
-### The second turning point: stop tuning by vibe and collect data {#the-second-turning-point-stop-tuning-by-vibe-and-collect-data}
+## The second turning point: stop tuning by vibe and collect data {#the-second-turning-point-stop-tuning-by-vibe-and-collect-data}
 
 The project got much better the moment I stopped asking “what
 heuristic feels right?” and started asking “what actually
@@ -287,7 +285,7 @@ That is real engineering. Not because it sounds more academic,
 but because it lets the signal explain itself.
 
 
-### What the data actually showed {#what-the-data-actually-showed}
+## What the data actually showed {#what-the-data-actually-showed}
 
 Once labeled traces existed, the useful features became much
 easier to inspect.
@@ -335,7 +333,7 @@ allowed to remove complexity.
 That is a great outcome.
 
 
-### Live testing mattered too {#live-testing-mattered-too}
+## Live testing mattered too {#live-testing-mattered-too}
 
 This is the other half of the story.
 
@@ -363,7 +361,7 @@ of speculative heuristics and into something that works.
 That is a meaningful threshold.
 
 
-### This is a palm-rejection-shaped problem {#this-is-a-palm-rejection-shaped-problem}
+## This is a palm-rejection-shaped problem {#this-is-a-palm-rejection-shaped-problem}
 
 One of the interesting realizations that came out of Glide is
 that the problem is more general than it first sounds.
@@ -402,7 +400,7 @@ underlying idea absolutely generalizes more than the initial use
 case might suggest.
 
 
-### Why existing input stacks did not already solve this for me {#why-existing-input-stacks-did-not-already-solve-this-for-me}
+## Why existing input stacks did not already solve this for me {#why-existing-input-stacks-did-not-already-solve-this-for-me}
 
 A natural reaction to this kind of project is: shouldn’t some
 higher-level input stack already provide the event I want?
@@ -437,7 +435,7 @@ intent.
 That is the gap the project lives in.
 
 
-### Why Rust still made sense {#why-rust-still-made-sense}
+## Why Rust still made sense {#why-rust-still-made-sense}
 
 This project also reinforced something I care about a lot: the
 language that is best for exploratory thought is not always the
@@ -464,7 +462,7 @@ project’s actual role became clear.
 It is not a thought experiment anymore. It is infrastructure.
 
 
-### Why the name Glide survived {#why-the-name-glide-survived}
+## Why the name Glide survived {#why-the-name-glide-survived}
 
 The naming story ended up following the design story.
 
@@ -491,7 +489,7 @@ better than the more literal names did.
 The project became more honest, and the name got better with it.
 
 
-### What actually happened here {#what-actually-happened-here}
+## What actually happened here {#what-actually-happened-here}
 
 Looking back, the development arc is clearer than it felt while I
 was inside it.
@@ -529,7 +527,7 @@ In both cases, the better version came from narrowing the problem
 until the right abstraction became visible.
 
 
-### The real lesson {#the-real-lesson}
+## The real lesson {#the-real-lesson}
 
 A project gets better when you stop forcing it to live in the wrong boundary, and when you stop pretending that one more heuristic is the same thing as understanding the signal.
 
