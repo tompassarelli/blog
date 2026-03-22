@@ -1,8 +1,9 @@
 +++
 title = "Static Income Fallacy"
 date = 2026-02-23T02:37:00+07:00
-tags = ["essay", "public"]
+tags = ["essay", "public", "culture"]
 draft = false
+aliases = ["/culture/static_income_fallacy/"]
 +++
 
 > Framework note: This essay applies the full arity triad to employment

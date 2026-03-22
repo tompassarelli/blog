@@ -1,9 +1,10 @@
 +++
 title = "Why Is There Something Rather Than Nothing"
 date = 2026-02-23T02:39:00+07:00
-tags = ["essay", "public"]
+tags = ["essay", "public", "philosophy"]
 draft = false
 weight = 5
+aliases = ["/philosophy/why_is_there_something_rather_than_nothing/"]
 +++
 
 > Editor's note: This essay predates _Running Comes First_ and uses an

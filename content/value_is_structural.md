@@ -1,9 +1,10 @@
 +++
 title = "Value Is Structural"
 date = 2026-03-13T00:00:00+07:00
-tags = ["essay", "public"]
+tags = ["essay", "public", "philosophy"]
 draft = false
 weight = 9
+aliases = ["/philosophy/value_is_structural/"]
 +++
 
 ---

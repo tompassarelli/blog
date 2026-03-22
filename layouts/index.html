@@ -39,31 +39,25 @@
   </form>
 </div>
 
-{{/* Recent writing: 8 most recent posts across all sections */}}
+{{/* Recent writing: 8 most recent posts */}}
 <section class="mb-10">
   <h2 class="text-xl font-semibold text-ef-fg mb-3 border-b border-ef-bg3 pb-1">Recent writing</h2>
-  {{ $recent := slice }}
-  {{ range .Site.Sections }}
-    {{ range .Pages }}
-      {{ $recent = $recent | append . }}
-    {{ end }}
-  {{ end }}
-  {{ range first 8 (sort $recent "Date" "desc") }}
+  {{ range first 8 .Site.RegularPages.ByDate.Reverse }}
   <div class="mb-2 flex flex-wrap items-baseline gap-x-2">
     <a href="{{ .RelPermalink }}" class="text-ef-green hover:text-ef-aqua">{{ .Title }}</a>
-    <span class="text-ef-grey1 text-sm">{{ .Section }}</span>
+    {{ range .GetTerms "tags" }}<a href="{{ .RelPermalink }}" class="text-ef-grey1 hover:text-ef-grey2 text-sm">{{ .LinkTitle }}</a> {{ end }}
     <span class="text-ef-grey2 text-sm">{{ .Date.Format "2006-01-02" }}</span>
   </div>
   {{ end }}
 </section>
 
-{{/* Section index */}}
+{{/* Tags */}}
 <section>
-  <h2 class="text-xl font-semibold text-ef-fg mb-3 border-b border-ef-bg3 pb-1">Sections</h2>
+  <h2 class="text-xl font-semibold text-ef-fg mb-3 border-b border-ef-bg3 pb-1">Tags</h2>
   <div class="flex flex-wrap gap-4">
-    {{ range .Site.Sections.ByWeight }}
-    <a href="{{ .RelPermalink }}" class="text-ef-green hover:text-ef-aqua">
-      {{ .Title }} <span class="text-ef-grey2 text-sm">({{ len .Pages }})</span>
+    {{ range .Site.Taxonomies.tags.Alphabetical }}
+    <a href="{{ .Page.RelPermalink }}" class="text-ef-green hover:text-ef-aqua">
+      {{ .Page.Title }} <span class="text-ef-grey2 text-sm">({{ .Count }})</span>
     </a>
     {{ end }}
   </div>

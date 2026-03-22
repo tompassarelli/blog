@@ -1,8 +1,9 @@
 +++
 title = "Post Gym Functionalism"
 date = 2026-02-23T03:12:00+07:00
-tags = ["essay", "public"]
+tags = ["essay", "public", "culture"]
 draft = false
+aliases = ["/culture/post_gym_functionalism/"]
 +++
 
 > Framework note: This essay is about what happens when effort is

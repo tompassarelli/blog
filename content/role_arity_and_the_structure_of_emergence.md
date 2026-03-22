@@ -1,9 +1,10 @@
 +++
 title = "Role-Arity and the Structure of Emergence"
 date = 2026-02-23T00:32:00+07:00
-tags = ["essay", "public"]
+tags = ["essay", "public", "philosophy"]
 draft = false
 weight = 4
+aliases = ["/philosophy/role_arity_and_the_structure_of_emergence/"]
 +++
 
 > Editor's note: This essay predates _Running Comes First_ and originally

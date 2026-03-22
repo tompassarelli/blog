@@ -1,9 +1,10 @@
 +++
 title = "Running Comes First"
 date = 2026-03-12T22:30:00+07:00
-tags = ["public", "essay"]
+tags = ["public", "essay", "philosophy"]
 draft = false
 weight = 2
+aliases = ["/philosophy/running_comes_first/"]
 +++
 
 ---

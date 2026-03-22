@@ -1,9 +1,10 @@
 +++
 title = "Agency Is Not Added"
 date = 2026-03-13T00:00:00+07:00
-tags = ["essay", "public"]
+tags = ["essay", "public", "philosophy"]
 draft = false
 weight = 8
+aliases = ["/philosophy/agency_is_not_added/"]
 +++
 
 ---

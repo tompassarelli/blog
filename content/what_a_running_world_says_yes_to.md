@@ -1,9 +1,10 @@
 +++
 title = "What a Running World Says Yes To"
 date = 2026-03-13T00:00:00+07:00
-tags = ["note", "public"]
+tags = ["note", "public", "philosophy"]
 draft = false
 weight = 3
+aliases = ["/philosophy/what_a_running_world_says_yes_to/"]
 +++
 
 > This is not an argument. It is a sketch of the affirmative territory
