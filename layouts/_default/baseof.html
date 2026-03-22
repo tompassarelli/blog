@@ -4,17 +4,65 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
-  <style>
-    /*
-     * Everforest dark palette — canonical source:
-     * https://github.com/sainnhe/everforest/blob/master/autoload/everforest.vim
-     *
-     * Accent/foreground colors are shared across all variants.
-     * Background colors change per variant (hard/medium/soft).
-     * To switch: change data-theme on <html>.
-     */
 
-    /* --- variant backgrounds --- */
+  {{/* SEO meta */}}
+  {{ $desc := or .Description .Site.Params.description | plainify | truncate 160 }}
+  <meta name="description" content="{{ $desc }}">
+  <meta name="author" content="{{ .Site.Params.author }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+
+  {{/* Open Graph */}}
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ $desc }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  {{ if .IsPage -}}
+  <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+  {{ end -}}
+
+  {{/* Twitter card */}}
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ .Title }}">
+  <meta name="twitter:description" content="{{ $desc }}">
+
+  {{/* JSON-LD structured data */}}
+  {{ if .IsHome }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": {{ .Site.Title | jsonify }},
+    "url": {{ .Site.BaseURL | jsonify }},
+    "description": {{ .Site.Params.description | jsonify }},
+    "author": {
+      "@type": "Person",
+      "name": {{ .Site.Params.author | jsonify }}
+    }
+  }
+  </script>
+  {{ else if .IsPage }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": {{ .Title | jsonify }},
+    "description": {{ $desc | jsonify }},
+    "url": {{ .Permalink | jsonify }},
+    "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+    {{ if ne .Lastmod .Date -}}
+    "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+    {{ end -}}
+    "author": {
+      "@type": "Person",
+      "name": {{ .Site.Params.author | jsonify }}
+    }
+  }
+  </script>
+  {{ end }}
+
+  {{/* Everforest theme variables */}}
+  <style>
     [data-theme="hard"] {
       --ef-bg-dim: #1e2326; --ef-bg0: #272e33; --ef-bg1: #2e383c;
       --ef-bg2: #374145;    --ef-bg3: #414b50; --ef-bg4: #495156;
@@ -36,8 +84,6 @@
       --ef-bg-visual: #5c3f4f; --ef-bg-red: #59464c; --ef-bg-yellow: #55544a;
       --ef-bg-green: #48584e;  --ef-bg-blue: #3f5865; --ef-bg-purple: #4e4953;
     }
-
-    /* --- shared accent/foreground --- */
     :root {
       --ef-fg:     #d3c6aa;
       --ef-red:    #e67e80; --ef-orange: #e69875; --ef-yellow: #dbbc7f;
@@ -46,44 +92,11 @@
       --ef-grey0:  #7a8478; --ef-grey1:  #859289; --ef-grey2:  #9da9a0;
     }
   </style>
-  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            // ef = everforest — don't overwrite, append new themes as siblings
-            ef: {
-              'bg-dim': 'var(--ef-bg-dim)',
-              bg:       'var(--ef-bg0)',
-              bg1:      'var(--ef-bg1)',
-              bg2:      'var(--ef-bg2)',
-              bg3:      'var(--ef-bg3)',
-              bg4:      'var(--ef-bg4)',
-              bg5:      'var(--ef-bg5)',
-              'bg-visual': 'var(--ef-bg-visual)',
-              'bg-red':    'var(--ef-bg-red)',
-              'bg-yellow': 'var(--ef-bg-yellow)',
-              'bg-green':  'var(--ef-bg-green)',
-              'bg-blue':   'var(--ef-bg-blue)',
-              'bg-purple': 'var(--ef-bg-purple)',
-              fg:      'var(--ef-fg)',
-              grey0:   'var(--ef-grey0)',
-              grey1:   'var(--ef-grey1)',
-              grey2:   'var(--ef-grey2)',
-              green:   'var(--ef-green)',
-              aqua:    'var(--ef-aqua)',
-              orange:  'var(--ef-orange)',
-              red:     'var(--ef-red)',
-              yellow:  'var(--ef-yellow)',
-              purple:  'var(--ef-purple)',
-              blue:    'var(--ef-blue)',
-            }
-          }
-        }
-      }
-    }
-  </script>
+
+  {{/* Tailwind CSS (built via PostCSS) */}}
+  {{ $css := resources.Get "css/main.css" | postCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+
   <!-- Privacy-friendly analytics by Plausible -->
   <script async src="https://plausible.io/js/pa-ekhkHL3y6f7LqsK1t0kiO.js"></script>
   <script>

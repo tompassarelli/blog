@@ -2,6 +2,10 @@ baseURL = 'https://tompassarelli.org/'
 languageCode = 'en-us'
 title = "Tom Passarelli's Blog"
 
+[params]
+  description = "Essays on philosophy, software, and formal systems by Tom Passarelli."
+  author = "Tom Passarelli"
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
