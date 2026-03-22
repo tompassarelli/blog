@@ -93,9 +93,9 @@
     }
   </style>
 
-  {{/* Tailwind CSS (built via PostCSS) */}}
-  {{ $css := resources.Get "css/main.css" | postCSS | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+  {{/* Tailwind CSS (built via PostCSS, inlined to avoid render-blocking request) */}}
+  {{ $css := resources.Get "css/main.css" | postCSS | minify }}
+  <style>{{ $css.Content | safeCSS }}</style>
 
   <!-- Privacy-friendly analytics by Plausible -->
   <script async src="https://plausible.io/js/pa-ekhkHL3y6f7LqsK1t0kiO.js"></script>
