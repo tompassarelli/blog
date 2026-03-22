@@ -7,14 +7,13 @@
   </div>
 </div>
 
-{{/* Start Here callout */}}
-{{ $start := .Site.GetPage "/foundations/start_here" }}
-{{ with $start }}
+{{/* Entry points */}}
 <div class="mb-10 border border-ef-bg3 rounded px-4 py-3">
-  <a href="{{ .RelPermalink }}" class="text-ef-green hover:text-ef-aqua font-semibold">Start Here</a>
-  <span class="text-ef-grey1 text-sm ml-2">— philosophy corpus</span>
+  <span class="text-ef-fg font-semibold">Entry Points:</span>
+  <a href="/foundations/" class="text-ef-green hover:text-ef-aqua ml-2">Philosophy</a>
+  <span class="text-ef-grey0 mx-1">•</span>
+  <a href="/software/" class="text-ef-green hover:text-ef-aqua">Software</a>
 </div>
-{{ end }}
 
 {{/* Recent writing: 8 most recent posts across all sections */}}
 <section class="mb-10">
