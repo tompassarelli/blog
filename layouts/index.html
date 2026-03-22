@@ -1,5 +1,12 @@
 {{ define "main" }}
 
+{{/* Profile photo */}}
+<div class="flex justify-center pt-4 pb-8">
+  <div class="w-[300px] h-[300px] overflow-hidden">
+    <img src="/selfie.jpg" alt="Tom Passarelli" class="w-full h-full object-cover">
+  </div>
+</div>
+
 {{/* Start Here callout */}}
 {{ $start := .Site.GetPage "/foundations/start_here" }}
 {{ with $start }}
