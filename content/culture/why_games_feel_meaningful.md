@@ -3,7 +3,6 @@ title = "Why Games Feel Meaningful"
 date = 2026-03-13T00:00:00+07:00
 tags = ["essay", "public"]
 draft = false
-weight = 10
 +++
 
 ---
