@@ -105,6 +105,7 @@
   </script>
 </head>
 <body class="max-w-3xl mx-auto px-4 py-8 bg-ef-bg text-ef-fg min-h-screen flex flex-col">
+  {{ if not .IsHome }}
   <header class="mb-8">
     <div class="flex items-center gap-2">
       <a href="/" class="text-xl font-bold hover:text-ef-green">{{ .Site.Title }}</a>
@@ -113,6 +114,7 @@
       </a>
     </div>
   </header>
+  {{ end }}
   <main class="flex-1">{{ block "main" . }}{{ end }}</main>
   <footer class="mt-16 pb-4 text-sm text-ef-grey2 flex items-center gap-1">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
