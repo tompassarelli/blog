@@ -6,7 +6,7 @@ Hugo site with Tailwind CSS (PostCSS build), deployed via GitHub Pages.
 
 ```sh
 npm ci
-ln -sf ../../hooks/pre-commit .git/hooks/pre-commit
+git config core.hooksPath hooks
 ```
 
 ## Before committing
