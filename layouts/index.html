@@ -10,7 +10,9 @@
 {{/* Entry points */}}
 <div class="mb-10 border border-ef-bg3 rounded px-4 py-3">
   <span class="text-ef-fg font-semibold">Entry Points:</span>
-  <a href="/foundations/" class="text-ef-green hover:text-ef-aqua ml-2">Philosophy</a>
+  <a href="/philosophy/" class="text-ef-green hover:text-ef-aqua ml-2">Philosophy</a>
+  <span class="text-ef-grey1 mx-1">•</span>
+  <a href="/culture/" class="text-ef-green hover:text-ef-aqua">Culture</a>
   <span class="text-ef-grey1 mx-1">•</span>
   <a href="/software/" class="text-ef-green hover:text-ef-aqua">Software</a>
 </div>
@@ -21,9 +23,7 @@
   {{ $recent := slice }}
   {{ range .Site.Sections }}
     {{ range .Pages }}
-      {{ if ne .File.ContentBaseName "start_here" }}
-        {{ $recent = $recent | append . }}
-      {{ end }}
+      {{ $recent = $recent | append . }}
     {{ end }}
   {{ end }}
   {{ range first 8 (sort $recent "Date" "desc") }}

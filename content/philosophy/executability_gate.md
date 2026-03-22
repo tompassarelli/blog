@@ -4,7 +4,7 @@ date = 2026-03-12T19:48:00+07:00
 slug = "the-executability-gate"
 tags = ["public", "essay"]
 draft = false
-weight = 6
+weight = 7
 +++
 
 ## Extending the Consistency Gate {#extending-the-consistency-gate}
