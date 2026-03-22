@@ -6,6 +6,9 @@ title = "Tom Passarelli's Blog"
   description = "Essays on philosophy, software, and formal systems by Tom Passarelli."
   author = "Tom Passarelli"
 
+[taxonomies]
+  tag = "tags"
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

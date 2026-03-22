@@ -1,7 +1,7 @@
 +++
 title = "README"
 date = 2026-03-13T00:00:00+07:00
-tags = ["essay", "public", "philosophy"]
+tags = ["public", "philosophy"]
 draft = false
 weight = 1
 aliases = ["/philosophy/readme/"]

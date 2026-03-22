@@ -45,7 +45,7 @@
   {{ range first 8 .Site.RegularPages.ByDate.Reverse }}
   <div class="mb-2 flex flex-wrap items-baseline gap-x-2">
     <a href="{{ .RelPermalink }}" class="text-ef-green hover:text-ef-aqua">{{ .Title }}</a>
-    {{ range .GetTerms "tags" }}<a href="{{ .RelPermalink }}" class="text-ef-grey1 hover:text-ef-grey2 text-sm">{{ .LinkTitle }}</a> {{ end }}
+    {{ range .GetTerms "tags" }}{{ if ne .LinkTitle "public" }}<a href="{{ .RelPermalink }}" class="text-ef-grey1 hover:text-ef-grey2 text-sm">{{ .LinkTitle }}</a> {{ end }}{{ end }}
     <span class="text-ef-grey2 text-sm">{{ .Date.Format "2006-01-02" }}</span>
   </div>
   {{ end }}

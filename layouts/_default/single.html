@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="mb-8">
   <div class="flex items-center gap-2 text-sm text-ef-grey2 mb-1">
-    {{ range .GetTerms "tags" }}<a href="{{ .RelPermalink }}" class="text-ef-green hover:text-ef-aqua">{{ .LinkTitle }}</a> {{ end }}
+    {{ range .GetTerms "tags" }}{{ if ne .LinkTitle "public" }}<a href="{{ .RelPermalink }}" class="text-ef-green hover:text-ef-aqua">{{ .LinkTitle }}</a> {{ end }}{{ end }}
     <span>&middot;</span>
     <time>{{ .Date.Format "2006-01-02" }}</time>
   </div>
