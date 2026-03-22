@@ -10,4 +10,12 @@
 <article class="prose prose-invert max-w-none prose-hr:border-ef-bg3 prose-headings:text-ef-fg prose-p:text-ef-fg prose-strong:text-ef-fg prose-a:text-ef-green hover:prose-a:text-ef-aqua prose-blockquote:text-ef-grey2 prose-code:text-ef-orange prose-li:text-ef-fg">
   {{ .Content }}
 </article>
+<div class="mt-12 pt-6 border-t border-ef-bg3">
+  <p class="text-ef-fg font-semibold mb-2">If this landed, you can follow by email.</p>
+  <form action="https://buttondown.com/api/emails/embed-subscribe/tompassarelli" method="post" class="flex gap-2 items-center">
+    <input type="email" name="email" placeholder="your@email.com" required autocomplete="off" data-1p-ignore data-bwignore data-lpignore="true"
+      class="bg-ef-bg1 border border-ef-bg3 rounded px-3 py-1.5 text-sm text-ef-fg placeholder-ef-grey2 focus:outline-none focus:border-ef-green">
+    <button type="submit" class="bg-ef-green hover:bg-ef-aqua text-ef-bg px-3 py-1.5 text-sm rounded font-medium">follow</button>
+  </form>
+</div>
 {{ end }}
