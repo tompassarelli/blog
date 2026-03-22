@@ -5,16 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
   <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            // ef = everforest — don't overwrite, append new themes as siblings
+            ef: {
+              bg:      '#2d353b',
+              bg1:     '#343f44',
+              bg3:     '#475258',
+              fg:      '#d3c6aa',
+              grey0:   '#7a8478',
+              grey1:   '#859289',
+              grey2:   '#9da9a0',
+              green:   '#a7c080',
+              aqua:    '#83c092',
+              orange:  '#e69875',
+              red:     '#e67e80',
+              yellow:  '#dbbc7f',
+              purple:  '#d699b6',
+              blue:    '#7fbbb3',
+            }
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body class="max-w-3xl mx-auto px-4 py-8 bg-neutral-950 text-neutral-200 min-h-screen flex flex-col">
+<body class="max-w-3xl mx-auto px-4 py-8 bg-ef-bg text-ef-fg min-h-screen flex flex-col">
   <header class="flex flex-wrap items-center justify-between gap-2 mb-8">
-    <a href="/" class="text-xl font-bold hover:text-blue-300">{{ .Site.Title }}</a>
+    <a href="/" class="text-xl font-bold hover:text-ef-green">{{ .Site.Title }}</a>
     <form action="https://buttondown.com/api/emails/embed-subscribe/tompassarelli" method="post" class="flex gap-2 items-center">
       <input type="email" name="email" placeholder="your@email.com" required
-        class="bg-neutral-900 border border-neutral-700 rounded px-3 py-1.5 text-sm text-neutral-200 placeholder-neutral-500 focus:outline-none focus:border-blue-400">
-      <button type="submit" class="bg-blue-500 hover:bg-blue-400 text-white px-3 py-1.5 text-sm rounded">subscribe</button>
+        class="bg-ef-bg1 border border-ef-bg3 rounded px-3 py-1.5 text-sm text-ef-fg placeholder-ef-grey0 focus:outline-none focus:border-ef-green">
+      <button type="submit" class="bg-ef-green hover:bg-ef-aqua text-ef-bg px-3 py-1.5 text-sm rounded font-medium">subscribe</button>
     </form>
-    <a href="/index.xml" title="RSS Feed" class="text-neutral-400 hover:text-orange-400" aria-label="RSS Feed">
+    <a href="/index.xml" title="RSS Feed" class="text-ef-grey0 hover:text-ef-orange" aria-label="RSS Feed">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><circle cx="6.18" cy="17.82" r="2.18"/><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/></svg>
     </a>
   </header>

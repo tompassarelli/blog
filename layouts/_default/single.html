@@ -1,13 +1,13 @@
 {{ define "main" }}
 <div class="mb-8">
-  <div class="flex items-center gap-2 text-sm text-neutral-500 mb-1">
-    <a href="/{{ .Section }}/" class="text-blue-400 hover:text-blue-300">{{ .Section }}</a>
+  <div class="flex items-center gap-2 text-sm text-ef-grey1 mb-1">
+    <a href="/{{ .Section }}/" class="text-ef-green hover:text-ef-aqua">{{ .Section }}</a>
     <span>&middot;</span>
     <time>{{ .Date.Format "2006-01-02" }}</time>
   </div>
   <h1 class="text-3xl font-bold">{{ .Title }}</h1>
 </div>
-<article class="prose prose-invert prose-neutral max-w-none prose-hr:border-neutral-800">
+<article class="prose prose-invert max-w-none prose-hr:border-ef-bg3 prose-headings:text-ef-fg prose-p:text-ef-fg prose-strong:text-ef-fg prose-a:text-ef-green hover:prose-a:text-ef-aqua prose-blockquote:text-ef-grey2 prose-code:text-ef-orange prose-li:text-ef-fg">
   {{ .Content }}
 </article>
 {{ end }}
