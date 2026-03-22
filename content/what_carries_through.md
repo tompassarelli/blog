@@ -1,10 +1,10 @@
 +++
 title = "What Carries Through"
 date = 2026-03-13T00:00:00+07:00
+aliases = ["/philosophy/what_carries_through/"]
 tags = ["philosophy"]
 draft = false
 weight = 10
-aliases = ["/philosophy/what_carries_through/"]
 +++
 
 ---

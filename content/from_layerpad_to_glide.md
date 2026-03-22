@@ -1,9 +1,9 @@
 +++
 title = "From Layerpad to Glide"
 date = 2026-03-17T03:56:00+07:00
+aliases = ["/software/from_layerpad_to_glide/"]
 tags = ["software", "linux", "input"]
 draft = false
-aliases = ["/software/from_layerpad_to_glide/"]
 +++
 
 The project did not start as a Kanata fork.

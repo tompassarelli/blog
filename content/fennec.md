@@ -1,9 +1,9 @@
 +++
 title = "Why Fennec"
 date = 2026-03-13T17:41:00+07:00
+aliases = ["/software/fennec/"]
 tags = ["software"]
 draft = false
-aliases = ["/software/fennec/"]
 +++
 
 > Framework note: This essay applies the carry-through criterion to

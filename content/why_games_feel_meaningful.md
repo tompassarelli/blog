@@ -1,9 +1,9 @@
 +++
 title = "Why Games Feel Meaningful"
 date = 2026-03-13T00:00:00+07:00
+aliases = ["/culture/why_games_feel_meaningful/"]
 tags = ["culture"]
 draft = false
-aliases = ["/culture/why_games_feel_meaningful/"]
 +++
 
 ---
