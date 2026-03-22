@@ -1,7 +1,7 @@
 +++
 title = "Why Social Platforms Break Relationships That Should Survive"
 date = 2026-02-23T03:24:00+07:00
-tags = ["public", "culture"]
+tags = ["culture"]
 draft = false
 aliases = ["/culture/why_social_platforms_break_relationships_that_should_survive/"]
 +++

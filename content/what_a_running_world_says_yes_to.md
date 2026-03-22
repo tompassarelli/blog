@@ -1,7 +1,7 @@
 +++
 title = "What a Running World Says Yes To"
 date = 2026-03-13T00:00:00+07:00
-tags = ["public", "philosophy"]
+tags = ["philosophy"]
 draft = false
 weight = 3
 aliases = ["/philosophy/what_a_running_world_says_yes_to/"]

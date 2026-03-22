@@ -1,7 +1,7 @@
 +++
 title = "Post Gym Functionalism"
 date = 2026-02-23T03:12:00+07:00
-tags = ["public", "culture"]
+tags = ["culture"]
 draft = false
 aliases = ["/culture/post_gym_functionalism/"]
 +++

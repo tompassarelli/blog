@@ -1,7 +1,7 @@
 +++
 title = "Why Is There Something Rather Than Nothing"
 date = 2026-02-23T02:39:00+07:00
-tags = ["public", "philosophy"]
+tags = ["philosophy"]
 draft = false
 weight = 5
 aliases = ["/philosophy/why_is_there_something_rather_than_nothing/"]

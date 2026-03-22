@@ -1,7 +1,7 @@
 +++
 title = "Why Fennec"
 date = 2026-03-13T17:41:00+07:00
-tags = ["public", "software"]
+tags = ["software"]
 draft = false
 aliases = ["/software/fennec/"]
 +++

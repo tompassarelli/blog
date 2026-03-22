@@ -2,7 +2,7 @@
 title = "The Executability Gate: Anchor-Failure Detection (V₂)"
 date = 2026-03-12T19:48:00+07:00
 slug = "the-executability-gate"
-tags = ["public", "philosophy"]
+tags = ["philosophy"]
 draft = false
 weight = 7
 aliases = ["/philosophy/executability_gate/"]
