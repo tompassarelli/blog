@@ -3,7 +3,7 @@
 {{ range .Pages.ByWeight }}
 <div class="mb-2">
   <a href="{{ .RelPermalink }}" class="text-ef-green hover:text-ef-aqua">{{ .Title }}</a>
-  <span class="text-ef-grey1 text-sm ml-2">{{ .Date.Format "2006-01-02" }}</span>
+  <span class="text-ef-grey2 text-sm ml-2">{{ .Date.Format "2006-01-02" }}</span>
 </div>
 {{ end }}
 {{ end }}

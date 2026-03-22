@@ -11,7 +11,7 @@
 <div class="mb-10 border border-ef-bg3 rounded px-4 py-3">
   <span class="text-ef-fg font-semibold">Entry Points:</span>
   <a href="/foundations/" class="text-ef-green hover:text-ef-aqua ml-2">Philosophy</a>
-  <span class="text-ef-grey0 mx-1">•</span>
+  <span class="text-ef-grey1 mx-1">•</span>
   <a href="/software/" class="text-ef-green hover:text-ef-aqua">Software</a>
 </div>
 
@@ -29,8 +29,8 @@
   {{ range first 8 (sort $recent "Date" "desc") }}
   <div class="mb-2 flex flex-wrap items-baseline gap-x-2">
     <a href="{{ .RelPermalink }}" class="text-ef-green hover:text-ef-aqua">{{ .Title }}</a>
-    <span class="text-ef-grey0 text-sm">{{ .Section }}</span>
-    <span class="text-ef-grey1 text-sm">{{ .Date.Format "2006-01-02" }}</span>
+    <span class="text-ef-grey1 text-sm">{{ .Section }}</span>
+    <span class="text-ef-grey2 text-sm">{{ .Date.Format "2006-01-02" }}</span>
   </div>
   {{ end }}
 </section>
@@ -41,7 +41,7 @@
   <div class="flex flex-wrap gap-4">
     {{ range .Site.Sections.ByWeight }}
     <a href="{{ .RelPermalink }}" class="text-ef-green hover:text-ef-aqua">
-      {{ .Title }} <span class="text-ef-grey1 text-sm">({{ len .Pages }})</span>
+      {{ .Title }} <span class="text-ef-grey2 text-sm">({{ len .Pages }})</span>
     </a>
     {{ end }}
   </div>
