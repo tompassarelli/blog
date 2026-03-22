@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+echo "Running hugo build check..."
+hugo --minify > /dev/null 2>&1
+if [ $? -ne 0 ]; then
+  echo "Hugo build failed. Fix errors before committing."
+  hugo --minify
+  exit 1
+fi
+echo "Hugo build OK."

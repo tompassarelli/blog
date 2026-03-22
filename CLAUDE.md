@@ -2,9 +2,16 @@
 
 Hugo site with Tailwind CSS (PostCSS build), deployed via GitHub Pages.
 
+## Setup after fresh clone
+
+```sh
+npm ci
+ln -sf ../../hooks/pre-commit .git/hooks/pre-commit
+```
+
 ## Before committing
 
-- Run `hugo --minify` to verify the build succeeds
+- The pre-commit hook runs `hugo --minify` automatically to verify the build
 - Check that any new Tailwind classes you use exist in `tailwind.config.js` color definitions
 - CSS is inlined in `baseof.html` via Hugo Pipes — no external stylesheet
 
