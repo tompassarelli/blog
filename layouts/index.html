@@ -41,7 +41,7 @@
 
 {{/* Recent writing: 8 most recent posts */}}
 <section class="mb-10">
-  <h2 class="text-xl font-semibold text-ef-fg mb-3 border-b border-ef-bg3 pb-1">Recent writing</h2>
+  <h2 class="text-xl font-semibold text-ef-fg mb-3 border-b border-ef-bg3 pb-1">Latest</h2>
   {{ range first 8 .Site.RegularPages.ByDate.Reverse }}
   <div class="mb-2 flex flex-wrap items-baseline gap-x-2">
     <a href="{{ .RelPermalink }}" class="text-ef-green hover:text-ef-aqua">{{ .Title }}</a>
