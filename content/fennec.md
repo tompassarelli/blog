@@ -98,27 +98,26 @@ You copy a CSS file into your profile's chrome folder. You paste another
 CSS file into Sideberry's style editor. You restart Firefox. You are
 done.
 
-There is no user.js. This is not a trivial omission. Many userChrome
-themes ship a user.js that modifies Firefox's internal about:config
-preferences --- flags that control security behavior, TLS settings,
-certificate handling, safe browsing, and update mechanisms. The user.js
-is typically deleted after first launch, but the settings it wrote
-persist silently in prefs.js. You are trusting someone else's
-about:config modifications without necessarily understanding each flag,
-and you are trusting that none of them weaken Firefox's security model
-in ways you did not intend.
+There are no user scripts. This is not a trivial omission. Many
+userChrome themes ship JavaScript files alongside their CSS --- scripts
+that run in the browser's chrome context with full access to Firefox's
+internal APIs. These scripts can modify UI behavior, intercept events,
+alter navigation flow, and interact with browser internals in ways that
+CSS cannot. You are trusting someone else's JavaScript running inside
+your browser's privileged context, and you are trusting that none of it
+introduces behavior you did not intend.
 
 Fennec accomplishes with CSS alone what most other projects have required
-user.js modifications to achieve --- sidebar toggling, UI reordering,
-the URL bar relocation into Sideberry's panel. This was a deliberate
-design decision. Solving these problems in pure CSS is harder upfront.
-It requires more careful planning, more knowledge of Firefox's internal
-DOM structure, and more willingness to find creative solutions within
-the constraint. But the constraint is the point. CSS can change how
-Firefox looks. It cannot change how Firefox behaves. This helps preserve
-the security boundary between presentation and configuration. Fennec
-does not require changing Firefox's internal preference state, which
-avoids expanding the trust surface in the way user.js-based setups can.
+user scripts to achieve --- sidebar toggling, UI reordering, the URL bar
+relocation into Sideberry's panel. This was a deliberate design decision.
+Solving these problems in pure CSS is harder upfront. It requires more
+careful planning, more knowledge of Firefox's internal DOM structure, and
+more willingness to find creative solutions within the constraint. But
+the constraint is the point. CSS can change how Firefox looks. It cannot
+change how Firefox behaves. This helps preserve the security boundary
+between presentation and behavior. Fennec does not require running
+JavaScript in Firefox's chrome context, which avoids expanding the trust
+surface in the way script-based setups can.
 
 
 ## The Tiling Problem {#the-tiling-problem}
