@@ -55,7 +55,7 @@
 <section>
   <h2 class="text-xl font-semibold text-ef-fg mb-3 border-b border-ef-bg3 pb-1">Tags</h2>
   <div class="flex flex-wrap gap-4">
-    {{ range .Site.Taxonomies.tags.Alphabetical }}
+    {{ range .Site.Taxonomies.tags.ByCount }}
     <a href="{{ .Page.RelPermalink }}" class="text-ef-green hover:text-ef-aqua">
       {{ .Page.Title }} <span class="text-ef-grey2 text-sm">({{ .Count }})</span>
     </a>
